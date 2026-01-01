@@ -1,0 +1,33 @@
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Merriweather", ui-serif, Georgia, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--contours);
+  background: radial-gradient(120% 120% at 50% -10%, #23313a 0%, transparent 50%),
+              linear-gradient(to top left, #0f1519 0%, var(--noir-fonds) 35%, #0f1519 100%);
+}
+img { max-width: 100%; display: block; height: auto; }
+button { font: inherit; }
+
+.container { width: 100%; max-width: 720px; margin: 0 auto; padding: 0 16px; }
+
+h1,h2,h3 { margin: 0 0 8px; font-weight: 700; }
+p { margin: 0 0 12px; }
+
+.section-upper {
+  background: transparent;
+}
+
+.section-title {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 1.125rem; letter-spacing: 0.2px;
+}
+
+.hr-accent { height: 1px; border: none; background: var(--contours); opacity: .6; }
+
+/* Accessible focus */
+:focus-visible { outline: 2px solid var(--contours); outline-offset: 2px; }

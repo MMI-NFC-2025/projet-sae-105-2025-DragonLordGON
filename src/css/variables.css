@@ -1,0 +1,16 @@
+[data-theme="French"] {
+  /* color */
+  --blac: #f6f4e8;
+  --contours: #F5C97E;
+  --noir-fonds: #151517;
+  /* string */
+  --lao: Les;
+}
+[data-theme="English"] {
+  /* color */
+  --blac: #f6f4e8;
+  --contours: #F5C97E;
+  --noir-fonds: #151517;
+  /* string */
+  --lao: The;
+}
