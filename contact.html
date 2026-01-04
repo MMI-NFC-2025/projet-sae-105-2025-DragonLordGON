@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Les Archives Oubliées — Projets Étudiants</title>
+        <title>Les Archives Oubliées — Nous Contacter</title>
         <!-- Fonts: Merriweather for body -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -105,131 +105,36 @@
         </nav>
 
         <main class="container" id="contenu">
-            <!-- Projets Section -->
-            <section class="section-projets" aria-labelledby="projets-title">
-                <h1 id="projets-title" class="projets-title">Projets Étudiants</h1>
-                
-                <div class="projets-grid">
-                    <!-- Génia -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/genesia.webp" alt="Génia" />
-                        </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Génia</h3>
-                            <p class="projet-student">Projet de Léonie Pruniaux</p>
-                        </div>
-                    </a>
+            <!-- Contact Section -->
+            <section class="section-contact" aria-labelledby="contact-title">
+                <div class="contact-header">
+                    <h1 id="contact-title" class="contact-title">Nous Contacter</h1>
+                    <div class="contact-separator">
+                        <svg width="56" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="4" x2="56" y2="4" stroke="#F5C97E" stroke-width="2"/><circle cx="56" cy="4" r="3" fill="#F5C97E"/></svg>
+                    </div>
+                </div>
 
-                    <!-- Apollo 11 qui dit mieux -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/appolo 11.webp" alt="Apollo 11 qui dit mieux" />
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" method="POST" action="#">
+                        <div class="contact-form-row">
+                            <div class="contact-form-group">
+                                <input type="text" id="nom" name="nom" placeholder="Nom" required class="contact-input" />
+                            </div>
+                            <div class="contact-form-group">
+                                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required class="contact-input" />
+                            </div>
                         </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Apollo 11 qui dit mieux</h3>
-                            <p class="projet-student">Projet de Noemie Caritey</p>
-                        </div>
-                    </a>
 
-                    <!-- Alice Ball (Noa) -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/alice ball noa.webp" alt="Alice Ball" />
+                        <div class="contact-form-group">
+                            <input type="email" id="email" name="email" placeholder="Adresse e-mail (exemple.ex@gmail.com)" required class="contact-input" />
                         </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Alice Ball</h3>
-                            <p class="projet-student">Projet de Noa Grevillot</p>
-                        </div>
-                    </a>
 
-                    <!-- Au delà du nobel -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/au dela du nobel.webp" alt="Au delà du nobel" />
+                        <div class="contact-form-group">
+                            <textarea id="message" name="message" placeholder="Mail" required class="contact-textarea"></textarea>
                         </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Au delà du nobel</h3>
-                            <p class="projet-student">Projet de Evan Gichtenaere</p>
-                        </div>
-                    </a>
 
-                    <!-- L'effet matilda -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/l'effet matilda clement.webp" alt="L'effet matilda" />
-                        </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">L'effet matilda</h3>
-                            <p class="projet-student">Projet de Clément Bertrand</p>
-                        </div>
-                    </a>
-
-                    <!-- Sous le microscope -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/sous le microscope.webp" alt="Sous le microscope" />
-                        </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Sous le microscope</h3>
-                            <p class="projet-student">Projet de Mahey Balambo</p>
-                        </div>
-                    </a>
-
-                    <!-- Mary Anning -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/mary anning.webp" alt="Mary Anning" />
-                        </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Mary Anning</h3>
-                            <p class="projet-student">Projet de Jeremy Vicaire</p>
-                        </div>
-                    </a>
-
-                    <!-- Tu Youyou -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/tu youyou.webp" alt="Tu Youyou" />
-                        </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Tu Youyou</h3>
-                            <p class="projet-student">Projet de Jehat Bakiray</p>
-                        </div>
-                    </a>
-
-                    <!-- Women of logics -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/women of logics.webp" alt="Women of logics" />
-                        </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Women of logics</h3>
-                            <p class="projet-student">Projet de Emma Badarous</p>
-                        </div>
-                    </a>
-
-                    <!-- Nicole-Reine Lepaute -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/nicole reine lepaute.webp" alt="Nicole-Reine Lepaute" />
-                        </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Nicole-Reine Lepaute</h3>
-                            <p class="projet-student">Projet de Nargis Ayyobi</p>
-                        </div>
-                    </a>
-
-                    <!-- Alice Ball (Rahma) -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/alice ball rahma.webp" alt="Alice Ball" />
-                        </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Alice Ball</h3>
-                            <p class="projet-student">Projet de Rahma Hamid</p>
-                        </div>
-                    </a>
+                        <button type="submit" class="contact-button">Envoyer</button>
+                    </form>
                 </div>
             </section>
         </main>
