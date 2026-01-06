@@ -1,0 +1,26 @@
+/* Button component styles */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 16px;
+  color: var(--contours);
+  background: transparent;
+  border: 1.5px solid var(--contours);
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+  background: var(--contours);
+  color: var(--noir-fonds);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}

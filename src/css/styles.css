@@ -1,381 +1,58 @@
 /* Components and layout for the landing page */
-
-/* Header */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  z-index: 1000;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+@import url('./components/header.css');
+@import url('./components/hero.css');
+@import url('./components/cards.css');
+@import url('./components/footer.css');
+@import url('./components/buttons.css');
+/* film card rules moved to components/cards.css */
+.chronologie-card,
+.chronologie-other-card,
+.related-card,
+.livre-related-card,
+.film-card,
+.article-related-card,
+.ressource-card {
+  --card-bg: #0a0c0e;
+  --card-border: var(--contours);
+  --card-border-width: 1.5px;
+  --card-radius: 12px;
+  --card-shadow: 0 3px 10px rgba(0,0,0,.45);
+  --card-hover-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+  --card-hover-translate: -5px;
+  background: var(--card-bg);
+  border: var(--card-border-width) solid var(--card-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
   overflow: hidden;
-}
-
-.header-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: auto;
-  z-index: 1;
-  object-fit: cover;
-}
-
-.header-content {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 50px;
-  z-index: 2;
-  margin-top: 5px;
-}
-
-.header-logo {
-  display: flex;
-  align-items: center;
-}
-
-.header-logo-img {
-  width: 45px;
-  height: 45px;
-  object-fit: contain;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.header-lang-img {
-  height: 32px;
-  width: auto;
-}
-
-.header-menu {
-  position: relative;
-  background: transparent;
-  border: none;
-  width: 42px;
-  height: 42px;
-  cursor: pointer;
-  padding: 0;
-}
-
-.menu-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.menu-bars {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  width: 60%;
-  z-index: 2;
-}
-
-.menu-bar {
-  width: 100%;
-  height: 2.5px;
-  background: var(--noir-fonds);
-  display: block;
-  border-radius: 2px;
-}
-
-/* Menu Navigation */
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--noir-fonds, #1a1a1a);
-  z-index: 999;
-  overflow-y: auto;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(-100%);
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
-  pointer-events: none;
-}
-
-.menu.open {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0);
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s;
-  pointer-events: auto;
-}
-
-.menu-content {
-  padding: 80px 50px 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.menu-title {
-  font-size: 2rem;
-  color: var(--or-titre, #d4af37);
-  font-style: italic;
-  margin-bottom: 30px;
-  border-bottom: 2px solid var(--or-titre, #d4af37);
-  padding-bottom: 15px;
-}
-
-.menu-subtitle {
-  font-size: 1.5rem;
-  color: var(--or-titre, #d4af37);
-  margin-top: 30px;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.menu-subtitle::before {
-  content: '◆';
-  color: var(--or-titre, #d4af37);
-  font-size: 1rem;
-}
-
-.menu-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0 0 20px 0;
-}
-
-.menu-item {
-  margin: 8px 0;
-}
-
-.menu-link {
-  color: var(--contours, #f5f5dc);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
-  font-size: 1.1rem;
-  display: block;
-  padding: 8px 0;
-  transition: color 0.3s ease, padding-left 0.3s ease;
 }
 
-.menu-link:hover {
-  color: var(--or-titre, #d4af37);
-  padding-left: 10px;
+.card:hover,
+.projet-card:hover,
+.chronologie-card:hover,
+.chronologie-other-card:hover,
+.related-card:hover,
+.livre-related-card:hover,
+.film-card:hover,
+.article-related-card:hover,
+.ressource-card:hover {
+  transform: translateY(var(--card-hover-translate));
+  box-shadow: var(--card-hover-shadow);
 }
 
-/* Menu footer utilise les mêmes styles que le footer principal */
-.menu .footer {
-  margin-top: 50px;
-  margin-left: -50px;
-  margin-right: -50px;
-  width: calc(100% + 100px);
-}
-
-.body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: var(--color-background, #0a0c0e);
-  color: var(--contours);
-  margin: 0; padding: 0;
-  line-height: 1.6;
-}
-
-.hero {
-  position: relative;
-  border-radius: 0;
-  overflow: visible;
-  background: transparent;
-  box-shadow: 0 4px 16px rgba(0,0,0,.6);
-  margin: 0 -16px;
-  border: 8px solid var(--contours);
-}
-.hero-media { aspect-ratio: 9/13; width: 100%; display: block; object-fit: cover; filter: saturate(.5) brightness(.65); }
-.hero-content { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); right: 20px; }
-.hero-kicker { display: none; }
-.hero-title { font-size: 2.5rem; line-height: 1; margin-bottom: 0; color: var(--contours); -webkit-text-stroke: 1.5px var(--contours); display: flex; flex-direction: column; }
-.hero-line { display: block; text-shadow: 0 2px 8px rgba(0,0,0,.9)}
-.hero-line-1 { padding-left: 10px; }
-.hero-line-2 { padding-left: 45px; }
-.hero-line-3 { padding-left: 80px; }
-.hero-cta-external { margin: 20px 0; }
-
-.btn-primary {
-  display: inline-flex; align-items: center; justify-content: center;
-  gap: 8px; padding: 10px 14px; width: 100%;
-  color: var(--contours); background: transparent;
-  border: 1.5px solid var(--contours); border-radius: 12px;
-  font-weight: 700; text-decoration: none;
-}
-
-.lede {
-  padding: 14px 0;
-  background: transparent;
-  color: var(--contours) ;
-}
-
-.list { display: grid; gap: 12px; }
-
-.card {
-  display: grid; grid-template-columns: 1fr; gap: 8px;
-  padding: 10px; border: 1.5px solid var(--contours);
-  border-radius: 12px; background: #0a0c0e; box-shadow: 0 3px 10px rgba(0,0,0,.45);
-}
-.card-media { width: 100%; border-radius: 8px; overflow: hidden; }
-.card-media img { width: 100%; height: 85px; object-fit: cover; border-radius: 8px; }
-.card-meta { font-size: .8rem; color: var(--color-text-muted, #c9cdd3); }
-.card-title { font-size: 1rem; font-weight: 700; }
-.card-link {
-  color: var(--contours);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-.card-link:hover {
-  color: var(--or-titre, #d4af37);
-}
-.card-desc { font-size: .95rem; color: #d9dde1; }
+/* card rules moved to components/cards.css */
 
 .subtle {
-  color: var(--color-text-muted, #c9cdd3);
+  color: var(--contours);
 }
 
 .spacer { height: 20px; }
 
-/* Footer styles */
-footer.footer {
-  background: var(--noir-fonds);
-  padding-top: 60px;
-  padding-bottom: 40px;
-  margin-top: 80px;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.footer-separator {
-  position: relative;
-  height: 60px;
-  margin-bottom: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.footer-star {
-  position: absolute;
-  width: 56px;
-  height: 56px;
-  flex-shrink: 0;
-  z-index: 5;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.footer-star-left {
-  left: -28px;
-}
-
-.footer-star-right {
-  right: -28px;
-}
-
-.separator-line {
-  position: relative;
-  height: 1.5px;
-  background: var(--contours);
-  flex: 1;
-  z-index: 10;
-}
-
-.footer-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-  align-items: center;
-  max-width: 100%;
-  margin: 0px auto 60px;
-  padding: 0 16px;
-}
-
-.footer-column {
-  display: flex;
-}
-
-.footer-column-left {
-  justify-content: flex-start;
-}
-
-.footer-column-right {
-  justify-content: flex-end;
-}
-
-.footer-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-links li {
-  margin-bottom: 12px;
-}
-
-.footer-links a {
-  color: var(--contours);
-  text-decoration: underline;
-  font-weight: 700;
-}
-
-.footer-center {
-  position: relative;
-  height: 120px;
-}
-
-.footer-logo {
-  position: absolute;
-  bottom: -100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120px;
-  height: 120px;
-}
-
-.footer-logo img {
-  width: 100%;
-  height: auto;
-}
-
-.footer-bottom {
-  text-align: center;
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-.footer-credit {
-  color: var(--contours);
-  font-size: 1rem;
-  margin: 0 0 12px;
-}
+/* footer rules moved to components/footer.css */
 
 .footer-legal {
-  color: var(--blac);
+  color: var(--contours);
   font-size: 0.65rem;
   margin: 0;
   line-height: 1.5;
@@ -408,18 +85,7 @@ footer.footer {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 0;
-  border: 1.5px solid var(--contours);
-  border-radius: 12px;
-  overflow: hidden;
-  background: #0a0c0e;
-  box-shadow: 0 3px 10px rgba(0,0,0,.45);
   text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.projet-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
 }
 
 .projet-media {
@@ -622,7 +288,7 @@ footer.footer {
   border: 1.5px solid var(--contours);
   border-radius: 6px;
   background: #e8e8e8;
-  color: var(--noir-fonds);
+  color: var(--contours);
   font-family: inherit;
   font-size: 1rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -632,7 +298,7 @@ footer.footer {
 
 .contact-input::placeholder,
 .contact-textarea::placeholder {
-  color: var(--noir-fonds);
+  color: var(--contours);
   opacity: 0.7;
 }
 
@@ -750,29 +416,15 @@ footer.footer {
 }
 
 .chronologie-timeline {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: linear-gradient(to bottom, var(--contours), var(--contours));
-  box-shadow: -15px 0 0 0 var(--contours);
+  display: none;
 }
 
 .chronologie-timeline::after {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  left: -9px;
-  width: 0;
-  height: 0;
-  border-left: 9px solid transparent;
-  border-right: 9px solid transparent;
-  border-top: 15px solid var(--contours);
+  display: none;
 }
 
 .chronologie-content {
-  padding-left: 40px;
+  padding-left: 0;
   position: relative;
   z-index: 1;
 }
@@ -780,18 +432,11 @@ footer.footer {
 .chronologie-period {
   margin: 40px 0 30px 0;
   position: relative;
+  margin-left: 60px;
 }
 
 .chronologie-period::before {
-  content: '';
-  position: absolute;
-  left: -20px;
-  top: 5px;
-  width: 12px;
-  height: 12px;
-  background: var(--contours);
-  border-radius: 50%;
-  border: 3px solid var(--noir-fonds);
+  display: none;
 }
 
 .chronologie-period-title {
@@ -806,71 +451,16 @@ footer.footer {
 .chronologie-item {
   margin-bottom: 30px;
   position: relative;
+  margin-left: 60px;
 }
 
 .chronologie-item::before {
-  content: '';
-  position: absolute;
-  left: -20px;
-  top: 30px;
-  width: 8px;
-  height: 8px;
-  background: var(--contours);
-  border-radius: 50%;
-  border: 2px solid var(--noir-fonds);
+  display: none;
 }
 
-.chronologie-card {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 20px;
-  border: 1.5px solid var(--contours);
-  border-radius: 8px;
-  overflow: hidden;
-  background: #0a0c0e;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+/* chronologie card layout moved to components/cards.css */
 
-.chronologie-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
-}
-
-.chronologie-media {
-  width: 100%;
-  height: 150px;
-  overflow: hidden;
-  background: #1a1a1a;
-}
-
-.chronologie-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.chronologie-text {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.chronologie-name {
-  font-size: 1.1rem;
-  color: var(--contours);
-  margin: 0 0 8px 0;
-  font-weight: 700;
-}
-
-.chronologie-description {
-  color: var(--contours);
-  font-size: 0.9rem;
-  line-height: 1.6;
-  margin: 0;
-}
+/* chronologie card content moved to components/cards.css */
 
 .chronologie-other-articles {
   margin-top: 50px;
@@ -885,36 +475,9 @@ footer.footer {
   margin: 0 0 30px 0;
 }
 
-.chronologie-other-card {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 20px;
-  border: 1.5px solid var(--contours);
-  border-radius: 8px;
-  overflow: hidden;
-  background: #0a0c0e;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+/* other chronologie card layout moved to components/cards.css */
 
-.chronologie-other-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
-}
-
-.chronologie-other-media {
-  width: 100%;
-  height: 150px;
-  overflow: hidden;
-  background: #1a1a1a;
-}
-
-.chronologie-other-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
+/* other chronologie media moved to components/cards.css */
 
 .chronologie-other-text {
   padding: 15px;
@@ -934,6 +497,27 @@ footer.footer {
   color: var(--contours);
   font-size: 0.9rem;
   line-height: 1.6;
+  margin: 0;
+}
+
+/* Chronologie timeline arrow positioning */
+.section-chronologie .article-arrow {
+  position: absolute;
+  left: 1rem;
+  top: 22rem;
+  max-width: 40px;
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+
+.chronologie-item .article-arrow {
+  position: absolute;
+  left: -60px;
+  top: 30px;
+  max-width: 50px;
+  height: auto;
+  width: auto;
   margin: 0;
 }
 
@@ -1036,74 +620,7 @@ footer.footer {
   }
 }
 
-.related-card {
-  background: rgba(26, 26, 26, 0.8);
-  border: 2px solid var(--or-titre);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.related-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
-}
-
-.related-card-image {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  background: #1a1a1a;
-}
-
-.related-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.related-card-content {
-  padding: 20px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.related-card-full {
-  padding: 30px;
-}
-
-.related-card-meta {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 15px;
-  flex-wrap: wrap;
-}
-
-.related-card-date,
-.related-card-reading {
-  color: var(--contours);
-  font-size: 0.85rem;
-  opacity: 0.8;
-}
-
-.related-card-title {
-  color: var(--or-titre);
-  font-size: 1.3rem;
-  margin: 0 0 15px 0;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-.related-card-excerpt {
-  color: var(--contours);
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0;
-  flex: 1;
-}
+/* related card rules moved to components/cards.css */
 
 @media (max-width: 767px) {
   .arte-title {
@@ -1244,21 +761,6 @@ footer.footer {
   font-weight: 700;
 }
 
-.livre-related-card {
-  background: rgba(26, 26, 26, 0.8);
-  border: 2px solid var(--or-titre);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.livre-related-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
-}
-
 .livre-related-image {
   width: 100%;
   height: 250px;
@@ -1351,17 +853,6 @@ footer.footer {
   display: grid;
   grid-template-columns: 150px 1fr;
   gap: 20px;
-  border: 1.5px solid var(--contours);
-  border-radius: 8px;
-  overflow: hidden;
-  background: #0a0c0e;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.film-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
 }
 
 .film-poster {
@@ -1429,7 +920,7 @@ footer.footer {
 
 .article-meta {
   color: var(--contours);
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   opacity: 0.8;
   margin: 0 0 20px 0;
 }
@@ -1443,9 +934,41 @@ footer.footer {
 }
 
 .article-arrow {
+  height: auto !important;
+  width: auto !important;
+  max-width: 250px !important;
+  display: block !important;
+  margin: 20px 0 !important;
+  color: transparent !important;
+  font-size: 0 !important;
+  font-weight: normal !important;
+}
+
+/* Uniformize page headers and titles across all pages */
+.about-header,
+.glossaire-header,
+.films-header,
+.chronologie-header,
+.arte-hero,
+.livre-hero,
+.ressources-hero {
+  margin-bottom: 40px;
+  border-bottom: 2px solid var(--or-titre);
+  padding-bottom: 20px;
+}
+
+.about-title,
+.glossaire-title,
+.films-title,
+.chronologie-title,
+.arte-title,
+.livre-title,
+.ressources-title {
+  font-size: 2.5rem;
   color: var(--or-titre);
-  font-size: 2rem;
-  font-weight: 300;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .article-section {
@@ -1508,40 +1031,7 @@ footer.footer {
   }
 }
 
-.article-related-card {
-  background: rgba(26, 26, 26, 0.6);
-  border: 1px solid var(--or-titre);
-  border-radius: 8px;
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.article-related-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(212, 175, 55, 0.25);
-}
-
-.article-related-date {
-  color: var(--contours);
-  font-size: 0.85rem;
-  opacity: 0.8;
-  margin: 0 0 10px 0;
-}
-
-.article-related-card-title {
-  color: var(--or-titre);
-  font-size: 1.2rem;
-  margin: 0 0 10px 0;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-.article-related-excerpt {
-  color: var(--contours);
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin: 0;
-}
+/* article-related card rules moved to components/cards.css */
 
 @media (max-width: 767px) {
   .article-title {
@@ -1612,19 +1102,9 @@ footer.footer {
   }
 }
 
-.ressource-card {
-  background: rgba(26, 26, 26, 0.8);
-  border: 2px solid var(--or-titre);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
 
-.ressource-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+.ressource-card {
+  --card-radius: 12px;
 }
 
 .ressource-image {
@@ -1671,4 +1151,9 @@ footer.footer {
   .ressource-image {
     height: 180px;
   }
+}
+
+/* Désactive le défilement horizontal */
+html, body {
+  overflow-x: hidden;
 }

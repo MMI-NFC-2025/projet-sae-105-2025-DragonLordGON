@@ -1,0 +1,22 @@
+/* Header and menu styles */
+.header { position: fixed; top: 0; left: 0; right: 0; height: 7rem; z-index: 1000; display: flex; align-items: flex-start; justify-content: center; }
+.header-bg { position: absolute; top: 0; left: 0; right: 0; width: 100%; height: auto; z-index: 1; object-fit: cover; }
+.header-content { position: relative; width: 100%; max-width: 120rem; display: flex; align-items: center; justify-content: space-between; padding: 0.25rem 2rem; z-index: 2; }
+.header-logo { display: flex; align-items: center; width: 70px; height: auto; }
+.header-logo-img { width: 60px; height: 60px; object-fit: contain; }
+.header-nav { display: flex; align-items: center; gap: 20px; }
+.header-lang-img { height: 40px; width: auto; }
+.header-menu { position: relative; background: transparent; border: none; width: 50px; height: 50px; cursor: pointer; padding: 0; }
+.menu-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+.menu-bars { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; width: 42%; z-index: 2; }
+.menu-bar { width: 100%; height: 2px; background: var(--contours); display: block; border-radius: 2px; }
+.menu { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--noir-fonds, #1a1a1a); z-index: 999; overflow-y: auto; opacity: 0; visibility: hidden; transform: translateX(-100%); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; pointer-events: none; }
+.menu.open { opacity: 1; visibility: visible; transform: translateX(0); transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s; pointer-events: auto; }
+.menu-content { padding: 80px 50px 40px; max-width: 1200px; margin: 0 auto; }
+.menu-title { font-size: 2rem; color: var(--or-titre, #d4af37); font-style: italic; margin-bottom: 30px; border-bottom: 2px solid var(--or-titre, #d4af37); padding-bottom: 15px; }
+.menu-subtitle { font-size: 1.5rem; color: var(--or-titre, #d4af37); margin-top: 30px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+.menu-subtitle::before { content: '◆'; color: var(--or-titre, #d4af37); font-size: 1rem; }
+.menu-list { list-style: none; padding-left: 0; margin: 0 0 20px 0; }
+.menu-item { margin: 8px 0; }
+.menu-link { color: var(--contours, #f5f5dc); text-decoration: none; font-size: 1.1rem; display: block; padding: 8px 0; transition: color 0.3s ease, padding-left 0.3s ease; }
+.menu .footer { margin-top: 50px; margin-left: -50px; margin-right: -50px; width: calc(100% + 100px); }

@@ -25,6 +25,7 @@ p { margin: 0 0 12px; }
 .section-title {
   display: flex; align-items: center; gap: 8px;
   font-size: 1.125rem; letter-spacing: 0.2px;
+  margin-top: 1.5rem;
 }
 
 .hr-accent { height: 1px; border: none; background: var(--contours); opacity: .6; }

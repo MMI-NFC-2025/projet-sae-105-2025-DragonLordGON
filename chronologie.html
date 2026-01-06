@@ -60,7 +60,7 @@
                 <h3 class="menu-subtitle">Contenu supplémentaire</h3>
                 <ul class="menu-list">
                     <li class="menu-item"><a href="chronologie.html" class="menu-link">Frise chronologique</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Liste de films</a></li>
+                    <li class="menu-item"><a href="films.html" class="menu-link">Liste de films</a></li>
                     <li class="menu-item"><a href="arte-aux-armes.html" class="menu-link">Film/documentaire ARTE</a></li>
                     <li class="menu-item"><a href="livre-oublies-science.html" class="menu-link">Extrait du livre "les oubliés de la science"</a></li>
                     <li class="menu-item"><a href="ressources-externes.html" class="menu-link">Ressources externes</a></li>
@@ -107,7 +107,10 @@
         <main class="container" id="contenu">
             <!-- Chronologie Section -->
             <section class="section-chronologie" aria-labelledby="chronologie-title">
-                <h1 id="chronologie-title" class="chronologie-title">Frise Chronologique</h1>
+                <div class="chronologie-header">
+                    <h1 id="chronologie-title" class="chronologie-title">Frise Chronologique</h1>
+                    <img src="assets/img/flecheTimeline.svg" alt="" class="article-arrow">
+                </div>
                 
                 <div class="chronologie-wrapper">
                     <div class="chronologie-timeline"></div>
@@ -121,7 +124,7 @@
                         <div class="chronologie-item">
                             <div class="chronologie-card">
                                 <div class="chronologie-media">
-                                    <img src="assets/img/liste portraits f scientifiques.webp" alt="Ada Lovelace" />
+                                    <img src="assets/img/ada lovelace.webp" alt="Ada Lovelace" />
                                 </div>
                                 <div class="chronologie-text">
                                     <h3 class="chronologie-name">Ada Lovelace (1815-1843)</h3>
@@ -186,7 +189,7 @@
                         <div class="chronologie-item">
                             <div class="chronologie-card">
                                 <div class="chronologie-media">
-                                    <img src="assets/img/cecilia payne.webp" alt="Cecilia Payne-Gaposchkin" />
+                                    <img src="assets/img/Cecilia Payne-Gaposchkin.webp" alt="Cecilia Payne-Gaposchkin" />
                                 </div>
                                 <div class="chronologie-text">
                                     <h3 class="chronologie-name">Cecilia Payne-Gaposchkin (1900-1979)</h3>
@@ -280,7 +283,7 @@
                         <!-- Autres articles -->
                         <div class="chronologie-other-articles">
                             <h2 class="chronologie-other-title">Autres articles relatifs :</h2>
-                            <div class="chronologie-other-card">
+                            <a class="chronologie-other-card" href="alice-ball.html">
                                 <div class="chronologie-other-media">
                                     <img src="assets/img/alice_ball1.webp" alt="Alice Ball: La chimiste qui a vaincu la lèpre" />
                                 </div>
@@ -288,7 +291,7 @@
                                     <h3 class="chronologie-other-name">Alice Ball: La chimiste qui a vaincu la lèpre à 23 ans</h3>
                                     <p class="chronologie-other-desc">Découvrez comment une scientifique afro-américaine a révolutionné le traitement contre la lèpre avec la « méthode Ball ».</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

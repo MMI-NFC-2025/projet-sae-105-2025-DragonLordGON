@@ -1,0 +1,16 @@
+/* Hero styles */
+.hero { position: relative; border-radius: 0; overflow: visible; background: transparent; margin: 0 -16px; border: 4px solid var(--contours); }
+.hero::after { content: ''; position: absolute; bottom: -0.9rem; left: -0.94375rem; width: 25px; height: 25px; background: var(--contours); transform: rotate(45deg); z-index: 10; }
+.hero::before { content: ''; position: absolute; bottom: -1rem; right: -1rem; width: 2rem; height: 2rem; background: var(--contours); border-radius: 50%; z-index: 10; }
+.hero-media { aspect-ratio: 9/13; width: 100%; display: block; object-fit: cover; filter: saturate(.5) brightness(.65); }
+.hero-content { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); right: 20px; }
+.hero-kicker { display: none; }
+.hero-title { font-size: 2.5rem; line-height: 1; margin-bottom: 0; color: var(--contours); -webkit-text-stroke: 1.5px var(--contours); display: flex; flex-direction: column; }
+.hero-line { display: block; text-shadow: 0 2px 8px rgba(0,0,0,.9); }
+.hero-line-1 { padding-left: 10px; }
+.hero-line-2 { padding-left: 45px; }
+.hero-line-3 { padding-left: 80px; }
+.hero-cta-external { margin: 32px 0; display: flex; justify-content: center; }
+
+/* Ensure equal spacing: no extra top margin on next section title */
+.section-upper + .section .section-title { margin-top: 0; }

@@ -1,0 +1,142 @@
+/* Shared card component styles */
+
+.card,
+.projet-card,
+.chronologie-card,
+.chronologie-other-card,
+.related-card,
+.livre-related-card,
+.film-card,
+.article-related-card,
+.ressource-card {
+  --card-bg: #0a0c0e;
+  --card-border: var(--contours);
+  --card-border-width: 1.5px;
+  --card-radius: 12px;
+  --card-shadow: 0 3px 10px rgba(0,0,0,.45);
+  --card-hover-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+  --card-hover-translate: -5px;
+  background: var(--card-bg);
+  border: var(--card-border-width) solid var(--card-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.card:hover,
+.projet-card:hover,
+.chronologie-card:hover,
+.chronologie-other-card:hover,
+.related-card:hover,
+.livre-related-card:hover,
+.film-card:hover,
+.article-related-card:hover,
+.ressource-card:hover {
+  transform: translateY(var(--card-hover-translate));
+  box-shadow: var(--card-hover-shadow);
+}
+
+/* Base card layout */
+.list { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.card { display: grid; grid-template-columns: 1fr; gap: 8px; padding: 10px; }
+.card-media { width: 100%; border-radius: 8px; overflow: hidden; }
+.card-media img { width: 100%; height: 85px; object-fit: cover; border-radius: 8px; }
+.card-meta { font-size: .8rem; color: var(--contours); }
+.card-title { font-size: 1rem; font-weight: 700; color: var(--contours); }
+.card-link { color: var(--contours); text-decoration: none; transition: color 0.3s ease; }
+.card-link:hover { color: var(--or-titre, #d4af37); }
+.card-desc { font-size: .95rem; color: var(--contours); }
+
+/* Ensure colors stay consistent when card is an anchor */
+.card { color: var(--contours); }
+.card .card-title { color: var(--contours); }
+.card:hover .card-title { color: var(--or-titre, #d4af37); }
+
+/* Projets */
+.projet-card { display: grid; grid-template-columns: 200px 1fr; gap: 0; text-decoration: none; }
+.projet-media { width: 100%; height: 200px; overflow: hidden; }
+.projet-media img { width: 100%; height: 100%; object-fit: cover; }
+.projet-content { padding: 20px; display: flex; flex-direction: column; justify-content: center; background: var(--card-bg); }
+.projet-name { font-size: 1.3rem; color: var(--contours); margin: 0 0 8px; font-weight: 700; }
+.projet-student { font-size: 0.9rem; color: var(--contours); opacity: 0.8; margin: 0; }
+
+/* Chronologie */
+.chronologie-card { display: grid; grid-template-columns: 1fr; gap: 0; }
+.chronologie-media { width: 100%; height: 200px; overflow: hidden; background: #1a1a1a; }
+.chronologie-media img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.chronologie-text { padding: 20px; display: flex; flex-direction: column; justify-content: center; }
+.chronologie-name { font-size: 1.1rem; color: var(--contours); margin: 0 0 8px; font-weight: 700; }
+.chronologie-description { color: var(--contours); font-size: 0.9rem; line-height: 1.6; margin: 0; }
+
+/* Chronologie autres */
+.chronologie-other-card { display: grid; grid-template-columns: 1fr; gap: 0; }
+.chronologie-other-media { width: 100%; height: 200px; overflow: hidden; background: #1a1a1a; }
+.chronologie-other-media img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.chronologie-other-text { padding: 20px; display: flex; flex-direction: column; justify-content: center; }
+.chronologie-other-name { font-size: 1.1rem; color: var(--contours); margin: 0 0 8px; font-weight: 700; }
+.chronologie-other-desc { color: var(--contours); font-size: 0.9rem; line-height: 1.6; margin: 0; }
+
+/* Related / Livre / Ressource common overrides */
+.related-card,
+.livre-related-card,
+.ressource-card { --card-bg: rgba(26, 26, 26, 0.8); --card-border: var(--or-titre); --card-border-width: 2px; display: flex; flex-direction: column; }
+.related-card,
+.livre-related-card { --card-radius: 8px; }
+.related-card { flex: 1; }
+
+/* Related */
+.related-card-image { width: 100%; height: 200px; overflow: hidden; background: #1a1a1a; }
+.related-card-image img { width: 100%; height: 100%; object-fit: cover; }
+.related-card-content { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+.related-card-full { padding: 30px; }
+.related-card-meta { display: flex; gap: 20px; margin-bottom: 15px; flex-wrap: wrap; }
+.related-card-date, .related-card-reading { color: var(--contours); font-size: 0.85rem; opacity: 0.8; }
+.related-card-title { color: var(--or-titre); font-size: 1.3rem; margin: 0 0 15px; font-weight: 700; line-height: 1.3; }
+.related-card-excerpt { color: var(--contours); font-size: 1rem; line-height: 1.6; margin: 0; flex: 1; }
+
+/* Livre */
+.livre-related-image { width: 100%; height: 250px; overflow: hidden; background: #1a1a1a; }
+.livre-related-image img { width: 100%; height: 100%; object-fit: cover; }
+.livre-related-content { padding: 25px; }
+.livre-related-meta { display: flex; gap: 20px; margin-bottom: 15px; flex-wrap: wrap; }
+.livre-related-date, .livre-related-reading { color: var(--contours); font-size: 0.85rem; opacity: 0.8; }
+.livre-related-title-text { color: var(--or-titre); font-size: 1.3rem; margin: 0 0 15px; font-weight: 700; }
+
+/* Films */
+.film-card { display: grid; grid-template-columns: 150px 1fr; gap: 20px; }
+.film-poster { width: 100%; height: 200px; overflow: hidden; background: #1a1a1a; }
+.film-poster img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.film-content { padding: 20px; display: flex; flex-direction: column; justify-content: center; }
+.film-name { font-size: 1.2rem; color: var(--contours); margin: 0 0 8px; font-weight: 700; }
+.film-year { font-size: 0.85rem; color: var(--or-titre, #d4af37); }
+
+/* Articles */
+.article-related-card { --card-bg: rgba(26, 26, 26, 0.6); --card-border: var(--or-titre); --card-border-width: 1px; --card-radius: 8px; --card-hover-shadow: 0 6px 15px rgba(212, 175, 55, 0.25); --card-hover-translate: -3px; padding: 20px; overflow: visible; }
+.article-related-date { color: var(--contours); font-size: 0.85rem; opacity: 0.8; margin: 0 0 10px; }
+.article-related-card-title { color: var(--or-titre); font-size: 1.2rem; margin: 0 0 10px; font-weight: 700; line-height: 1.3; }
+
+/* Anchor card colors - ensure text color override */
+.article-related-card { color: var(--contours); }
+.article-related-card .article-related-card-title { color: var(--or-titre); }
+.article-related-card:hover .article-related-card-title { color: #f5d990; }
+
+/* Film card anchor styles */
+.film-card { color: var(--contours); }
+.film-card .film-name { color: var(--contours); }
+.film-card:hover .film-name { color: var(--or-titre, #d4af37); }
+
+/* Chronologie other card anchor styles */
+.chronologie-other-card { color: var(--contours); }
+.chronologie-other-card .chronologie-other-name { color: var(--contours); }
+.chronologie-other-card:hover .chronologie-other-name { color: var(--or-titre, #d4af37); }
+.article-related-excerpt { color: var(--contours); font-size: 0.95rem; line-height: 1.6; margin: 0; }
+
+/* Ressources */
+.ressource-card { --card-radius: 12px; }
+.ressource-image { width: 100%; height: 200px; overflow: hidden; background: #1a1a1a; }
+.ressource-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.ressource-content { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+.ressource-title { color: var(--or-titre); font-size: 1.2rem; margin: 0 0 10px; font-weight: 700; line-height: 1.3; }
+.ressource-description { color: var(--contours); font-size: 0.95rem; line-height: 1.6; margin: 0; }
