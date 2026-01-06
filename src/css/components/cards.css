@@ -104,13 +104,19 @@
 .livre-related-date, .livre-related-reading { color: var(--contours); font-size: 0.85rem; opacity: 0.8; }
 .livre-related-title-text { color: var(--or-titre); font-size: 1.3rem; margin: 0 0 15px; font-weight: 700; }
 
+/* Livre card anchor styles */
+.livre-related-card { color: var(--contours); }
+.livre-related-card .livre-related-title-text { color: var(--or-titre); }
+.livre-related-card:hover .livre-related-title-text { color: #f5d990; }
+
 /* Films */
-.film-card { display: grid; grid-template-columns: 150px 1fr; gap: 20px; }
-.film-poster { width: 100%; height: 200px; overflow: hidden; background: #1a1a1a; }
-.film-poster img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.film-card { display: flex; flex-direction: column; gap: 0; }
+.film-poster { width: 100%; height: auto; overflow: visible; background: #1a1a1a; }
+.film-poster img { width: 100%; height: auto; object-fit: contain; object-position: center; }
 .film-content { padding: 20px; display: flex; flex-direction: column; justify-content: center; }
 .film-name { font-size: 1.2rem; color: var(--contours); margin: 0 0 8px; font-weight: 700; }
 .film-year { font-size: 0.85rem; color: var(--or-titre, #d4af37); }
+.film-description { font-size: 0.95rem; color: var(--contours); margin: 0; }
 
 /* Articles */
 .article-related-card { --card-bg: rgba(26, 26, 26, 0.6); --card-border: var(--or-titre); --card-border-width: 1px; --card-radius: 8px; --card-hover-shadow: 0 6px 15px rgba(212, 175, 55, 0.25); --card-hover-translate: -3px; padding: 20px; overflow: visible; }
@@ -134,9 +140,13 @@
 .article-related-excerpt { color: var(--contours); font-size: 0.95rem; line-height: 1.6; margin: 0; }
 
 /* Ressources */
-.ressource-card { --card-radius: 12px; }
+.ressource-card { --card-radius: 12px; color: var(--contours); }
 .ressource-image { width: 100%; height: 200px; overflow: hidden; background: #1a1a1a; }
 .ressource-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .ressource-content { padding: 20px; flex: 1; display: flex; flex-direction: column; }
 .ressource-title { color: var(--or-titre); font-size: 1.2rem; margin: 0 0 10px; font-weight: 700; line-height: 1.3; }
 .ressource-description { color: var(--contours); font-size: 0.95rem; line-height: 1.6; margin: 0; }
+
+/* Ressource card anchor styles */
+.ressource-card .ressource-title { color: var(--or-titre); }
+.ressource-card:hover .ressource-title { color: #f5d990; }
