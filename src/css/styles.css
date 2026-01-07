@@ -587,7 +587,8 @@
   border-radius: 8px;
 }
 
-.arte-video-container iframe {
+.arte-video-container iframe,
+.arte-video-container video {
   position: absolute;
   top: 0;
   left: 0;
