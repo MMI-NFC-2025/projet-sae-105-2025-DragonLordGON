@@ -3,32 +3,34 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Les Archives Oubliées — Glossaire</title>
+        <title>Les Archives Oubliées — À Propos</title>
         <!-- Fonts: Merriweather for body -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="src/css/variables.css" />
-        <link rel="stylesheet" href="src/css/base.css" />
-        <link rel="stylesheet" href="src/css/styles.css" />
+        <link rel="stylesheet" href="../src/css/variables.css" />
+        <link rel="stylesheet" href="../src/css/base.css" />
+        <link rel="stylesheet" href="../src/css/styles.css" />
+        <link rel="alternate" href="/fr/about.html" hreflang="fr" />
+        <link rel="alternate" href="/en/about.html" hreflang="en" />
     </head>
     <body>
         <!-- Header -->
         <header class="header">
-            <img src="assets/logo/Header bg cropped.svg" alt="" class="header-bg" />
+            <img src="../assets/logo/Header bg cropped.svg" alt="" class="header-bg" />
             
             <div class="header-content">
                 <div class="header-logo">
                     <a href="index.html" class="header-logo-link">
-                        <img src="assets/logo/logo.svg" alt="Logo Les Archives Oubliées" class="header-logo-img" />
+                        <img src="../assets/logo/logo.svg" alt="Logo Les Archives Oubliées" class="header-logo-img" />
                     </a>
                 </div>
                 <nav class="header-nav">
-                    <img src="assets/logo/en_fr.svg" alt="EN / FR" class="header-lang-img" />
+                    <a href="../en/about.html" class="header-lang-link"><img src="../assets/logo/en_fr.svg" alt="Switch to English" class="header-lang-img" /></a>
                     <button class="header-menu" aria-label="Menu">
-                        <img src="assets/logo/menu btn bg.svg" alt="" class="menu-bg" />
+                        <img src="../assets/logo/menu btn bg.svg" alt="" class="menu-bg" />
                         <div class="menu-bars">
                             <span class="menu-bar"></span>
                             <span class="menu-bar"></span>
@@ -59,8 +61,8 @@
                 
                 <h3 class="menu-subtitle">Contenu supplémentaire</h3>
                 <ul class="menu-list">
-                    <li class="menu-item"><a href="#" class="menu-link">Frise chronologique</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Liste de films</a></li>
+                    <li class="menu-item"><a href="chronologie.html" class="menu-link">Frise chronologique</a></li>
+                    <li class="menu-item"><a href="films.html" class="menu-link">Liste de films</a></li>
                     <li class="menu-item"><a href="arte-aux-armes.html" class="menu-link">Film/documentaire ARTE</a></li>
                     <li class="menu-item"><a href="livre-oublies-science.html" class="menu-link">Extrait du livre "les oubliés de la science"</a></li>
                     <li class="menu-item"><a href="ressources-externes.html" class="menu-link">Ressources externes</a></li>
@@ -105,97 +107,58 @@
         </nav>
 
         <main class="container" id="contenu">
-            <!-- Glossaire Section -->
-            <section class="section-glossaire" aria-labelledby="glossaire-title">
-                <div class="glossaire-header">
-                    <h1 id="glossaire-title" class="glossaire-title">Glossaire</h1>
+            <!-- À Propos Section -->
+            <section class="section-about" aria-labelledby="about-title">
+                <div class="about-header">
+                    <h1 id="about-title" class="about-title">À Propos</h1>
                     <img src="assets/img/line with square.svg" alt="" class="article-arrow" />
                 </div>
 
-                <div class="glossaire-content">
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Effet Matilda</h3>
-                        <p class="glossaire-definition">Mécanisme d'invisibilisation systématique de la contribution des femmes scientifiques, dont le travail est souvent minimisé ou attribué à leurs collègues masculins. Nommé par Margaret W. Rossiter en hommage à la militante Matilda Joslyn Gage.</p>
+                <div class="about-content">
+                    <!-- Welcome Section -->
+                    <div class="about-section">
+                        <p class="about-text">Bienvenue sur ce site ! Je m'appelle Merlin Henry, et ce projet est le fruit de mes premières études en tant qu'étudiant en première année de BUT Métiers du Multimédia et de l'Internet.</p>
                     </div>
 
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Désappropriation Intellectuelle</h3>
-                        <p class="glossaire-definition">L'acte de s'attribuer la découverte, l'invention ou le travail d'une autre personne, une pratique conduisant à la spoliation de la reconnaissance et de son héritage.</p>
+                    <!-- Double Objectif -->
+                    <div class="about-section">
+                        <h2 class="about-subtitle">Ce projet individuel à un double objectif, qui est à la fois personnel et académique :</h2>
+                        
+                        <ul class="about-objectives">
+                            <li class="about-objective">
+                                <strong>Réparer une injustice historique (L'Effet Matilda) :</strong> je suis convaincu qu'il est essentiel de donner la visibilité aux femmes de science dont les contributions ont été historiquement minimisées ou effacées. Mon but est de mettre en lumière leurs travaux pour rétablir une histoire des sciences plus équitable.
+                            </li>
+                            <li class="about-objective">
+                                <strong>Être une ressource :</strong> mon souhait et de donner accès aux sources tangibles et aux informations biographiques. Je conçois ce site comme un outil que les enseignants et les étudiants pourront utiliser, en garantissant la plus grande rigueur dans les faits présentés.
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Justice Mémorielle</h3>
-                        <p class="glossaire-definition">Le processus de réhabilitation et de reconnaissance des figures historiques oubliées, souvent par l'intermédiaire de l'art, de la littérature ou de documents.</p>
+                    <!-- Competences -->
+                    <div class="about-section">
+                        <h2 class="about-subtitle">Mettre les Compétences en Pratique</h2>
+                        
+                        <p class="about-text">Ce site est également une démonstration concrète des compétences acquises au cours de mes cinq premiers mois en MMI :</p>
+                        
+                        <ul class="about-skills">
+                            <li class="about-skill">
+                                <strong>Conception Web « Mobile First » :</strong> cela signifie que j'ai optimisé l'expérience utilisateur pour les appareils mobiles en priorité, assurant une consultation rapide et agréable.
+                            </li>
+                            <li class="about-skill">
+                                <strong>Construction de site web :</strong> ce projet est l'occasion de montrer ma capacité à construire un premier site web, en gérant l'intégration, la structure et le respect des standards.
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Invisibilisation</h3>
-                        <p class="glossaire-definition">Le fait de rendre absent ou d'effacer les contributions et les apports de certaines catégories de personnes, et en femmes, sous des prétextes culturels.</p>
+                    <!-- Exploration -->
+                    <div class="about-section">
+                        <p class="about-text">En explorant ces pages, vous ne découvrez pas seulement les figures scientifiques que j'ai choisi de mettre en avant, mais aussi le résultat de mes premiers apprentissages en MMI.</p>
                     </div>
 
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Modèles Féminins</h3>
-                        <p class="glossaire-definition">Les figures de femmes scientifiques, figure d'inspiration dont la reconnaissance est essentielle pour inspirer l'ambition notamment chez les jeunes filles (dominant dans les domaines STEM).</p>
-                    </div>
-
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Alice Ball</h3>
-                        <p class="glossaire-definition">Chimiste afro-américaine pionnière du XXe siècle qui a développé le premier traitement injectable efficace contre la lèpre (Méthode Ball), avant d'être victime de spoliation posthume.</p>
-                    </div>
-
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Lise Meitner</h3>
-                        <p class="glossaire-definition">Physicienne autrichienne dont l'explication théorique de la fission nucléaire a été systématiquement minimisée, sans elle.</p>
-                    </div>
-
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Rosalind Franklin</h3>
-                        <p class="glossaire-definition">Cristallographe essentielle à la découverte de la structure en double hélice de l'ADN grâce à son cliché (Photo 51), ses travaux ont été utilisés par Watson et Crick.</p>
-                    </div>
-
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Jocelyn Bell Burnell</h3>
-                        <p class="glossaire-definition">Astrophysicienne qui a découvert le premier pulsar (étoile à neutrons), son directeur de thèse a reçu le Prix Nobel pour cette découverte.</p>
-                    </div>
-
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Marie-Jeanne Ghika</h3>
-                        <p class="glossaire-definition">Figure de la Révolution française, dont le rôle politique a été occulté pendant des de la citoyenne, dont le rôle politique a été occulté pendant près de deux siècles.</p>
-                    </div>
-
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Lèpre (ou Maladie de Hansen)</h3>
-                        <p class="glossaire-definition">Maladie infectieuse incurable jusqu'à la découverte du traitement par Alice Ball, cela ayant tellement traumatisant jusqu'à ce qu'Alice Ball découvre le traitement injectable.</p>
-                    </div>
-
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Chaulmoogra</h3>
-                        <p class="glossaire-definition">Huile extraite des graines utilisées dans le traitement de la lèpre, dont l'administration était difficile car le résultat était efficace.</p>
-                    </div>
-
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Chaulnoogra</h3>
-                        <p class="glossaire-definition">Huile extraite des graines utilisées dans le traitement de la lèpre, dont l'administration était difficile car elle n'était pas miscible dans le sang.</p>
-                    </div>
-
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Huile de Chaulmoogra</h3>
-                        <p class="glossaire-definition">Un procédé chimique utilisé par Alice Ball pour transformer les acides gras de l'huile en esters d'arachides, les rendant solubles et injectables.</p>
-                    </div>
-
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Fission Nucléaire</h3>
-                        <p class="glossaire-definition">Processus physique découvert par Lise Meitner, qui a mené à l'énergie atomique et à la bombe.</p>
-                    </div>
-
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">Diluar</h3>
-                        <p class="glossaire-definition">Étoile à neutrons à rotation rapide, découverte par Jocelyn Bell Burnell en 1967.</p>
-                    </div>
-
-                    <div class="glossaire-item">
-                        <h3 class="glossaire-term">STEM</h3>
-                        <p class="glossaire-definition">Sciences (Sciences) Technologie (Technologie) Engineering (Ingénierie) Mathematics (Mathématiques).</p>
+                    <!-- Merci -->
+                    <div class="about-section">
+                        <h2 class="about-subtitle">Merci de votre visite !</h2>
+                        <p class="about-credits">Tous les crédits d'images vont à Wikipedia</p>
                     </div>
                 </div>
             </section>
@@ -238,7 +201,7 @@
         </footer>
         
         <!-- Scripts -->
-        <script src="src/js/menu.js"></script>
+        <script src="../src/js/menu.js"></script>
     </body>
   
 </html>

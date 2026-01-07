@@ -3,32 +3,34 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Les Archives Oubliées — Projets Étudiants</title>
+        <title>Les Archives Oubliées — Liste De Films</title>
         <!-- Fonts: Merriweather for body -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="src/css/variables.css" />
-        <link rel="stylesheet" href="src/css/base.css" />
-        <link rel="stylesheet" href="src/css/styles.css" />
+        <link rel="stylesheet" href="../src/css/variables.css" />
+        <link rel="stylesheet" href="../src/css/base.css" />
+        <link rel="stylesheet" href="../src/css/styles.css" />
+        <link rel="alternate" href="/fr/films.html" hreflang="fr" />
+        <link rel="alternate" href="/en/films.html" hreflang="en" />
     </head>
     <body>
         <!-- Header -->
         <header class="header">
-            <img src="assets/logo/Header bg cropped.svg" alt="" class="header-bg" />
+            <img src="../assets/logo/Header bg cropped.svg" alt="" class="header-bg" />
             
             <div class="header-content">
                 <div class="header-logo">
                     <a href="index.html" class="header-logo-link">
-                        <img src="assets/logo/logo.svg" alt="Logo Les Archives Oubliées" class="header-logo-img" />
+                        <img src="../assets/logo/logo.svg" alt="Logo Les Archives Oubliées" class="header-logo-img" />
                     </a>
                 </div>
                 <nav class="header-nav">
-                    <img src="assets/logo/en_fr.svg" alt="EN / FR" class="header-lang-img" />
+                    <a href="../en/films.html" class="header-lang-link"><img src="../assets/logo/en_fr.svg" alt="Switch to English" class="header-lang-img" /></a>
                     <button class="header-menu" aria-label="Menu">
-                        <img src="assets/logo/menu btn bg.svg" alt="" class="menu-bg" />
+                        <img src="../assets/logo/menu btn bg.svg" alt="" class="menu-bg" />
                         <div class="menu-bars">
                             <span class="menu-bar"></span>
                             <span class="menu-bar"></span>
@@ -105,131 +107,91 @@
         </nav>
 
         <main class="container" id="contenu">
-            <!-- Projets Section -->
-            <section class="section-projets" aria-labelledby="projets-title">
-                <h1 id="projets-title" class="projets-title">Projets Étudiants</h1>
-                
-                <div class="projets-grid">
-                    <!-- Génia -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/genesia.webp" alt="Génia" />
+            <!-- Films Section -->
+            <section class="section-films" aria-labelledby="films-title">
+                <div class="films-header">
+                    <h1 id="films-title" class="films-title">Liste De Films</h1>
+                    <img src="assets/img/line with square.svg" alt="" class="article-arrow" />
+                </div>
+
+                <div class="films-grid">
+                    <!-- Hidden Figures -->
+                    <a class="film-card" href="#">
+                        <div class="film-poster">
+                            <img src="assets/img/figures de l'ombre small.webp" alt="Hidden Figures" />
                         </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Génia</h3>
-                            <p class="projet-student">Projet de Léonie Pruniaux</p>
+                        <div class="film-content">
+                            <h3 class="film-name">Hidden Figures</h3>
+                            <p class="film-year">2016</p>
+                            <p class="film-description">Theodore Melfi nous raconte l'histoire vraie de trois femmes mathématiciennes afro-américaines qui ont contribué à la mission spatiale Apollo, malgré la discrimination.</p>
                         </div>
                     </a>
 
-                    <!-- Apollo 11 qui dit mieux -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/appolo 11.webp" alt="Apollo 11 qui dit mieux" />
+                    <!-- Radioactive -->
+                    <a class="film-card" href="#">
+                        <div class="film-poster">
+                            <img src="assets/img/radioactive poster.webp" alt="Radioactive" />
                         </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Apollo 11 qui dit mieux</h3>
-                            <p class="projet-student">Projet de Noemie Caritey</p>
-                        </div>
-                    </a>
-
-                    <!-- Alice Ball (Noa) -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/alice ball noa.webp" alt="Alice Ball" />
-                        </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Alice Ball</h3>
-                            <p class="projet-student">Projet de Noa Grevillot</p>
+                        <div class="film-content">
+                            <h3 class="film-name">Radioactive</h3>
+                            <p class="film-year">2019</p>
+                            <p class="film-description">Le biopic de Marie Curie, première femme à recevoir un prix Nobel. Un film sur la passion, l'ambition et les sacrifices d'une scientifique révolutionnaire.</p>
                         </div>
                     </a>
 
-                    <!-- Au delà du nobel -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/au dela du nobel.webp" alt="Au delà du nobel" />
+                    <!-- On the Basis of Sex -->
+                    <a class="film-card" href="#">
+                        <div class="film-poster">
+                            <img src="assets/img/on the basis of sex poster.webp" alt="On the Basis of Sex" />
                         </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Au delà du nobel</h3>
-                            <p class="projet-student">Projet de Evan Gichtenaere</p>
-                        </div>
-                    </a>
-
-                    <!-- L'effet matilda -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/l'effet matilda clement.webp" alt="L'effet matilda" />
-                        </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">L'effet matilda</h3>
-                            <p class="projet-student">Projet de Clément Bertrand</p>
+                        <div class="film-content">
+                            <h3 class="film-name">On the Basis of Sex</h3>
+                            <p class="film-year">2018</p>
+                            <p class="film-description">L'histoire de Ruth Bader Ginsburg et de sa lutte pour l'égalité des droits. Un film inspirant sur la persévérance et la justice.</p>
                         </div>
                     </a>
 
-                    <!-- Sous le microscope -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/sous le microscope.webp" alt="Sous le microscope" />
+                    <!-- Aux Armes, Citoyennes -->
+                    <a class="film-card" href="#">
+                        <div class="film-poster">
+                            <img src="assets/img/aux armes citoyennes poster.webp" alt="Aux armes, citoyennes" />
                         </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Sous le microscope</h3>
-                            <p class="projet-student">Projet de Mahey Balambo</p>
-                        </div>
-                    </a>
-
-                    <!-- Mary Anning -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/mary anning.webp" alt="Mary Anning" />
-                        </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Mary Anning</h3>
-                            <p class="projet-student">Projet de Jeremy Vicaire</p>
+                        <div class="film-content">
+                            <h3 class="film-name">Aux armes, citoyennes</h3>
+                            <p class="film-year">Documentaire ARTE</p>
+                            <p class="film-description">Un documentaire retraçant les figures féminines majeures de la Révolution française et leur rôle fondamental dans l'histoire politique.</p>
                         </div>
                     </a>
 
-                    <!-- Tu Youyou -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/tu youyou.webp" alt="Tu Youyou" />
+                    <!-- Marie Curie -->
+                    <a class="film-card" href="#">
+                        <div class="film-poster">
+                            <img src="assets/img/marie curie poster.webp" alt="Marie Curie" />
                         </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Tu Youyou</h3>
-                            <p class="projet-student">Projet de Jehat Bakiray</p>
-                        </div>
-                    </a>
-
-                    <!-- Women of logics -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/women of logics.webp" alt="Women of logics" />
-                        </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Women of logics</h3>
-                            <p class="projet-student">Projet de Emma Badarous</p>
+                        <div class="film-content">
+                            <h3 class="film-name">Marie Curie</h3>
+                            <p class="film-year">2016</p>
+                            <p class="film-description">Une exploration visuelle du parcours de Marie Curie et de sa découverte révolutionnaire de la radioactivité.</p>
                         </div>
                     </a>
 
-                    <!-- Nicole-Reine Lepaute -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/nicole reine lepaute.webp" alt="Nicole-Reine Lepaute" />
+                    <!-- Cherchez Natasha -->
+                    <a class="film-card" href="#">
+                        <div class="film-poster">
+                            <img src="assets/img/cherchez la femme poster.webp" alt="Cherchez Natasha" />
                         </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Nicole-Reine Lepaute</h3>
-                            <p class="projet-student">Projet de Nargis Ayyobi</p>
+                        <div class="film-content">
+                            <h3 class="film-name">Cherchez Natasha</h3>
+                            <p class="film-year">Film de fiction</p>
+                            <p class="film-description">Une comédie dramatique explorant les rôles des femmes dans les domaines scientifiques et académiques traditionnellement masculins.</p>
                         </div>
                     </a>
 
-                    <!-- Alice Ball (Rahma) -->
-                    <a href="#" class="projet-card">
-                        <div class="projet-media">
-                            <img src="assets/img/alice ball rahma.webp" alt="Alice Ball" />
-                        </div>
-                        <div class="projet-content">
-                            <h3 class="projet-name">Alice Ball</h3>
-                            <p class="projet-student">Projet de Rahma Hamid</p>
-                        </div>
-                    </a>
+                    <!-- The Imitation Game -->
+                    <!-- SUPPRIMÉ -->
+
+                    <!-- Silent Pioneers -->
+                    <!-- SUPPRIMÉ -->
                 </div>
             </section>
         </main>
@@ -272,6 +234,7 @@
         
         <!-- Scripts -->
         <script src="src/js/menu.js"></script>
+        <script src="../src/js/menu.js"></script>
     </body>
   
 </html>

@@ -1,256 +1,111 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="French">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Les Archives Oubliées — Accueil</title>
-        <!-- Fonts: Merriweather for body -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-
-        <!-- Styles -->
-        <link rel="stylesheet" href="src/css/variables.css" />
-        <link rel="stylesheet" href="src/css/base.css" />
-        <link rel="stylesheet" href="src/css/styles.css" />
-    </head>
-    <body>
-        <!-- Header -->
-        <header class="header">
-            <img src="assets/logo/Header bg cropped.svg" alt="" class="header-bg" />
-            
-            <div class="header-content">
-                <div class="header-logo">
-                    <a href="index.html" class="header-logo-link">
-                        <img src="assets/logo/logo.svg" alt="Logo Les Archives Oubliées" class="header-logo-img" />
-                    </a>
-                </div>
-                <nav class="header-nav">
-                    <img src="assets/logo/en_fr.svg" alt="EN / FR" class="header-lang-img" />
-                    <button class="header-menu" aria-label="Menu">
-                        <img src="assets/logo/menu btn bg.svg" alt="" class="menu-bg" />
-                        <div class="menu-bars">
-                            <span class="menu-bar"></span>
-                            <span class="menu-bar"></span>
-                            <span class="menu-bar"></span>
-                        </div>
-                    </button>
-                </nav>
-            </div>
-        </header>
-
-        <!-- Menu Navigation -->
-        <nav class="menu">
-            <div class="menu-content">
-                <h2 class="menu-title">Les Archives Oubliées</h2>
-                
-                <ul class="menu-list">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                </ul>
-                
-                <h3 class="menu-subtitle">Articles</h3>
-                <ul class="menu-list">
-                    <li class="menu-item"><a href="alice-ball.html" class="menu-link">Alice ball</a></li>
-                    <li class="menu-item"><a href="heroines-oubliees.html" class="menu-link">Les Héroïnes oubliées</a></li>
-                    <li class="menu-item"><a href="methode-ball.html" class="menu-link">La «Méthode Ball»</a></li>
-                    <li class="menu-item"><a href="cinema-histoire.html" class="menu-link">Cinéma & Histoire</a></li>
-                    <li class="menu-item"><a href="oublies-science-article.html" class="menu-link">«Les Oubliés de la Science»</a></li>
-                </ul>
-                
-                <h3 class="menu-subtitle">Contenu supplémentaire</h3>
-                <ul class="menu-list">
-                    <li class="menu-item"><a href="chronologie.html" class="menu-link">Frise chronologique</a></li>
-                    <li class="menu-item"><a href="films.html" class="menu-link">Liste de films</a></li>
-                    <li class="menu-item"><a href="arte-aux-armes.html" class="menu-link">Film/documentaire ARTE</a></li>
-                    <li class="menu-item"><a href="livre-oublies-science.html" class="menu-link">Extrait du livre "les oubliés de la science"</a></li>
-                    <li class="menu-item"><a href="ressources-externes.html" class="menu-link">Ressources externes</a></li>
-                </ul>
-                
-                <!-- Footer -->
-                <footer class="footer">
-                    <div class="footer-separator">
-                        <svg class="footer-star footer-star-left" width="56" height="56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28 0s-.133 15.592 6.138 21.862C40.408 28.132 56 28 56 28s-15.592-.133-21.862 6.138C27.868 40.408 28 56 28 56s.133-15.592-6.138-21.862C15.592 27.868 0 28 0 28s15.592.133 21.862-6.138C28.132 15.592 28 0 28 0z" fill="#F5C97E"/></svg>
-                        <div class="separator-line"></div>
-                        <svg class="footer-star footer-star-right" width="56" height="56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28 0s-.133 15.592 6.138 21.862C40.408 28.132 56 28 56 28s-15.592-.133-21.862 6.138C27.868 40.408 28 56 28 56s.133-15.592-6.138-21.862C15.592 27.868 0 28 0 28s15.592.133 21.862-6.138C28.132 15.592 28 0 28 0z" fill="#F5C97E"/></svg>
-                    </div>
-
-                    <div class="footer-content">
-                        <div class="footer-column footer-column-left">
-                            <ul class="footer-links">
-                                <li><a href="contact.html">Nous contacter</a></li>
-                                <li><a href="glossaire.html">Glossaire</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-center">
-                            <div class="footer-logo">
-                                <img src="assets/logo/logo.svg" alt="Logo Les Archives Oubliées" />
-                            </div>
-                        </div>
-
-                        <div class="footer-column footer-column-right">
-                            <ul class="footer-links">
-                                <li><a href="projets.html">Autre projects</a></li>
-                                <li><a href="about.html">À propos</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="footer-bottom">
-                        <p class="footer-credit">Projet de Merlin Henry A1</p>
-                        <p class="footer-legal">Mentions Légales : projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMI de Montbéliard</p>
-                    </div>
-                </footer>
-            </div>
-        </nav>
-
-        <main class="container" id="contenu">
-            <!-- Hero -->
-            <section class="section-upper" aria-labelledby="hero-title">
-                <div class="hero">
-                    <img class="hero-media" src="assets/img/alice_ball1.webp" alt="Portrait d'Alice Ball au laboratoire" />
-                    <div class="hero-content">
-                        <h1 id="hero-title" class="hero-title">
-                            <span class="hero-line hero-line-1">Les</span>
-                            <span class="hero-line hero-line-2">Archives</span>
-                            <span class="hero-line hero-line-3">Oubliées</span>
-                        </h1>
-                    </div>
-                </div>
-                <p class="hero-cta-external">
-                    <a class="btn-primary" href="#alice-ball" aria-label="Découvrir Alice Ball">Découvrir Alice Ball →</a>
-                </p>
-            </section>
-
-            <!-- Lede / Intro -->
-            <section class="section" aria-labelledby="lede-title">
-                <h2 id="lede-title" class="section-title">Les « matildas » dans l’histoire…</h2>
-                <div class="lede">
-                    <p>
-                        L’effet Matilda désigne la minimisation ou l’effacement des apports des femmes scientifiques au profit de leurs collègues masculins.
-                        De Rosalind Franklin à Lise Meitner, Les Archives Oubliées mettent en lumière ces trajectoires et rétablissent leurs contributions.
-                    </p>
-                </div>
-            </section>
-
-            <!-- Articles récents -->
-            <section class="section" aria-labelledby="recent-title">
-                <h2 id="recent-title" class="section-title">Articles récents :</h2>
-                <div class="list">
-                    <a href="alice-ball.html" class="card" id="alice-ball">
-                        <div class="card-media">
-                            <img src="assets/img/alice ball bnw small.webp" alt="Alice Ball, portrait" />
-                        </div>
-                        <div class="card-meta">Publié il y a 1 j · 2 min de lecture</div>
-                        <h3 class="card-title">Alice Ball : la chimiste qui a vaincu la lèpre à 23 ans</h3>
-                        <p class="card-desc">Découvrez comment une scientifique afro-américaine a révolutionné le traitement contre la lèpre avec la « méthode Ball ».</p>
-                    </a>
-
-                    <a href="heroines-oubliees.html" class="card">
-                        <div class="card-media">
-                            <img src="assets/img/BAM oubliés de la science.webp" alt="Illustration : les héroïnes oubliées" />
-                        </div>
-                        <div class="card-meta">Publié hier · 4 min de lecture</div>
-                        <h3 class="card-title">Les héroïnes oubliées : l'injustice que la fiction répare</h3>
-                        <p class="card-desc">De la littérature au cinéma, l'effet Matilda trouve un contrechamp puissant qui réhabilite des pionnières inspirantes.</p>
-                    </a>
-
-                    <a href="methode-ball.html" class="card">
-                        <div class="card-media">
-                            <img src="assets/img/ball method teaser.webp" alt="Illustration de la méthode Ball" />
-                        </div>
-                        <div class="card-meta">Publié il y a 12 h · 3 min de lecture</div>
-                        <h3 class="card-title">La « méthode Ball » : comment Alice Ball révolutionne la médecine</h3>
-                        <p class="card-desc">Un aperçu clair de la découverte, de sa réception et de son impact sanitaire.</p>
-                    </a>
-
-                    <a href="cinema-histoire.html" class="card">
-                        <div class="card-media">
-                            <img src="assets/img/figures de l'ombre small.webp" alt="Affiche : figures féminines de la science" />
-                        </div>
-                        <div class="card-meta">Publié il y a 2 j · 3 min de lecture</div>
-                        <h3 class="card-title">Cinéma & Histoire : réhabiliter des figures féminines oubliées</h3>
-                        <p class="card-desc">Des œuvres de fiction comme « Les Figures de l'ombre » participent à changer le récit mémoriel.</p>
-                    </a>
-
-                    <a href="oublies-science-article.html" class="card">
-                        <div class="card-media">
-                            <img src="assets/img/edition les oubliés de la science.webp" alt="Couverture du livre Les oubliés de la science" />
-                        </div>
-                        <div class="card-meta">Publié il y a 2 j · 2 min de lecture</div>
-                        <h3 class="card-title">« Les Oubliés de la Science » : synthèse et dénonciation de l'effet Matilda</h3>
-                        <p class="card-desc">Un ouvrage de référence pour comprendre les mécanismes d'invisibilisation systémique.</p>
-                    </a>
-                </div>
-            </section>
-            <br />
-            <img src="assets/img/séparateurs.svg" alt="" aria-hidden="true" class="separator-ornament" />
-            <br />
-            <!-- Contenu supplémentaire -->
-            <section class="section" aria-labelledby="extra-title">
-                <h2 id="extra-title" class="section-title">Contenu supplémentaire :</h2>
-                <div class="list">
-                    <a href="chronologie.html" class="card">
-                        <h3 class="card-title">Frise chronologique des Matildas</h3>
-                        <p class="card-desc">Naviguez à travers des découvertes majeures et inventions signées par des femmes scientifiques.</p>
-                    </a>
-
-                    <a href="films.html" class="card">
-                        <h3 class="card-title">Liste de films en relation avec les Matildas</h3>
-                        <p class="card-desc">Une sélection d'œuvres pour explorer les parcours et les luttes des scientifiques.</p>
-                    </a>
-
-                    <a href="arte-aux-armes.html" class="card">
-                        <h3 class="card-title">Documentaire ARTE « Aux armes, citoyennes »</h3>
-                        <p class="card-desc">Découverte d'un extrait et points clés sur l'apport du film à l'histoire publique.</p>
-                    </a>
-
-                    <a href="livre-oublies-science.html" class="card">
-                        <h3 class="card-title">Extrait du livre « Les oubliés de la science »</h3>
-                        <p class="card-desc">Quelques pages commentées pour donner envie d'aller plus loin.</p>
-                    </a>
-                </div>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-separator">
-                <svg class="footer-star footer-star-left" width="56" height="56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28 0s-.133 15.592 6.138 21.862C40.408 28.132 56 28 56 28s-15.592-.133-21.862 6.138C27.868 40.408 28 56 28 56s.133-15.592-6.138-21.862C15.592 27.868 0 28 0 28s15.592.133 21.862-6.138C28.132 15.592 28 0 28 0z" fill="#F5C97E"/></svg>
-                <div class="separator-line"></div>
-                <svg class="footer-star footer-star-right" width="56" height="56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28 0s-.133 15.592 6.138 21.862C40.408 28.132 56 28 56 28s-15.592-.133-21.862 6.138C27.868 40.408 28 56 28 56s.133-15.592-6.138-21.862C15.592 27.868 0 28 0 28s15.592.133 21.862-6.138C28.132 15.592 28 0 28 0z" fill="#F5C97E"/></svg>
-            </div>
-
-            <div class="footer-content">
-                <div class="footer-column footer-column-left">
-                    <ul class="footer-links">
-                        <li><a href="contact.html">Nous contacter</a></li>
-                        <li><a href="glossaire.html">Glossaire</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-center">
-                    <div class="footer-logo">
-                        <img src="assets/logo/logo.svg" alt="Logo Les Archives Oubliées" />
-                    </div>
-                </div>
-
-                <div class="footer-column footer-column-right">
-                    <ul class="footer-links">
-                        <li><a href="projets.html">Autre projects</a></li>
-                        <li><a href="about.html">À propos</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p class="footer-credit">Projet de Merlin Henry A1</p>
-                <p class="footer-legal">Mentions Légales : projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMI de Montbéliard</p>
-            </div>
-        </footer>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Les Archives Oubliées / The Forgotten Archives</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/variables.css" />
+    <link rel="stylesheet" href="src/css/base.css" />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: var(--noir-fonds, #151517);
+            color: var(--contours, #F5C97E);
+            padding: 20px;
+            text-align: center;
+        }
         
-        <!-- Scripts -->
-        <script src="src/js/menu.js"></script>
-    </body>
-  
+        .language-selector {
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .logo {
+            margin-bottom: 40px;
+        }
+        
+        .logo img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--or-titre, #d4af37);
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+        
+        .language-links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .language-link {
+            display: block;
+            padding: 20px 40px;
+            background: rgba(26, 26, 26, 0.8);
+            border: 2px solid var(--or-titre, #d4af37);
+            border-radius: 12px;
+            color: var(--or-titre, #d4af37);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            min-width: 300px;
+        }
+        
+        .language-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+            background: rgba(26, 26, 26, 1);
+        }
+        
+        .language-link .flag {
+            font-size: 2rem;
+            margin-right: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .language-link {
+                font-size: 1.2rem;
+                min-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <div class="logo">
+            <img src="assets/logo/logo.svg" alt="Les Archives Oubliées Logo" />
+        </div>
+        
+        <h1>Choisissez votre langue / Choose your language</h1>
+        
+        <div class="language-links">
+            <a href="/fr/" class="language-link">
+                <span class="flag">🇫🇷</span>
+                Accueil en français
+            </a>
+            <a href="/en/" class="language-link">
+                <span class="flag">🇬🇧</span>
+                Home in English
+            </a>
+        </div>
+    </div>
+</body>
 </html>

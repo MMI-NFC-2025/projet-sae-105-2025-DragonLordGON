@@ -3,32 +3,34 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Les Archives Oubliées — Les Oubliés De La Science</title>
+        <title>Les Archives Oubliées — Aux Armes Citoyennes</title>
         <!-- Fonts: Merriweather for body -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="src/css/variables.css" />
-        <link rel="stylesheet" href="src/css/base.css" />
-        <link rel="stylesheet" href="src/css/styles.css" />
+        <link rel="stylesheet" href="../src/css/variables.css" />
+        <link rel="stylesheet" href="../src/css/base.css" />
+        <link rel="stylesheet" href="../src/css/styles.css" />
+        <link rel="alternate" href="/fr/arte-aux-armes.html" hreflang="fr" />
+        <link rel="alternate" href="/en/arte-aux-armes.html" hreflang="en" />
     </head>
     <body>
         <!-- Header -->
         <header class="header">
-            <img src="assets/logo/Header bg cropped.svg" alt="" class="header-bg" />
+            <img src="../assets/logo/Header bg cropped.svg" alt="" class="header-bg" />
             
             <div class="header-content">
                 <div class="header-logo">
                     <a href="index.html" class="header-logo-link">
-                        <img src="assets/logo/logo.svg" alt="Logo Les Archives Oubliées" class="header-logo-img" />
+                        <img src="../assets/logo/logo.svg" alt="Logo Les Archives Oubliées" class="header-logo-img" />
                     </a>
                 </div>
                 <nav class="header-nav">
-                    <img src="assets/logo/en_fr.svg" alt="EN / FR" class="header-lang-img" />
+                    <a href="../en/arte-aux-armes.html" class="header-lang-link"><img src="../assets/logo/en_fr.svg" alt="Switch to English" class="header-lang-img" /></a>
                     <button class="header-menu" aria-label="Menu">
-                        <img src="assets/logo/menu btn bg.svg" alt="" class="menu-bg" />
+                        <img src="../assets/logo/menu btn bg.svg" alt="" class="menu-bg" />
                         <div class="menu-bars">
                             <span class="menu-bar"></span>
                             <span class="menu-bar"></span>
@@ -82,80 +84,92 @@
                             </ul>
                         </div>
 
-                        <div class="footer-center">
-                            <div class="footer-logo">
-                                <img src="assets/logo/logo.svg" alt="Logo Les Archives Oubliées" />
-                            </div>
+                        <div class="footer-column footer-column-center">
+                            <img src="assets/logo/logo footer.svg" alt="Logo Les Archives Oubliées" class="footer-logo" />
                         </div>
 
                         <div class="footer-column footer-column-right">
                             <ul class="footer-links">
-                                <li><a href="projets.html">Autre projects</a></li>
+                                <li><a href="projets.html">Autre projets</a></li>
                                 <li><a href="about.html">À propos</a></li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="footer-bottom">
-                        <p class="footer-credit">Projet de Merlin Henry A1</p>
-                        <p class="footer-legal">Mentions Légales : projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMI de Montbéliard</p>
-                    </div>
+                    <p class="footer-project-info">
+                        Projet de <span class="footer-author">Merlin Henry A1</span>
+                    </p>
+                    <p class="footer-legal">
+                        Mentions Légales : projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard
+                    </p>
                 </footer>
             </div>
         </nav>
 
         <!-- Main Content -->
-        <main class="main-content livre-page">
+        <main class="main-content arte-page">
             <!-- Hero Section -->
-            <section class="livre-hero">
-                <h1 class="livre-title">Extrait Du Livre "Les Oubliés De La Science"</h1>
+            <section class="arte-hero">
+                <h1 class="arte-title">Extrait Du Film "Aux Armes Citoyennes"</h1>
                 <img src="assets/img/line with square.svg" alt="" class="article-arrow" />
             </section>
 
-            <!-- Description Section -->
-            <section class="livre-description">
-                <p>«Les Oubliés de la Science» est une bande dessinée passionnante qui corrige les manuels d'histoire.</p>
+            <!-- Film Description -->
+            <section class="arte-description">
+                <p>Le documentaire "Aux armes, citoyennes !" d'ARTE est une remise en question radicale du récit de la Révolution française, traditionnellement dominé par des figures masculines comme Danton ou Robespierre.</p>
                 
-                <p>Découvrez les 48 scientifiques, hommes et femmes, dont les travaux cruciaux ont été injustement spoliés ou minimisés, que ce soit par le sexisme (l'Effet Matilda), le racisme ou la malchance.</p>
+                <p>Ce film met en lumière les milliers de femmes (de Théroigne de Méricourt à Olympe de Gouges) qui ont été les actrices majeures des insurrections, notamment la Marche des femmes sur Versailles.</p>
                 
-                <p>C'est l'occasion de rencontrer Cecilia Payne, Vera Rubin, Lise Meitner, Rosalind Franklin et d'ouvrir les yeux sur l'autre histoire de la science !</p>
+                <p>Il explore non seulement leurs revendications politiques, mais surtout les mécanismes d'occultation qui les ont rayées de l'Histoire pendant deux siècles, luttant ainsi contre l'Effet Matilda dans le domaine politique.</p>
             </section>
 
-            <!-- Book Cover -->
-            <section class="livre-cover-section">
-                <div class="livre-cover">
-                    <img src="assets/img/les oubliés de la science cover.webp" alt="Couverture du livre Les Oubliés de la Science par Camille Van Belle" />
-                </div>
-            </section>
-
-            <!-- Book Extracts -->
-            <section class="livre-extracts">
-                <div class="livre-extract-pages">
-                    <img src="assets/img/ls oubliés de la science extract.webp" alt="Extraits de pages du livre Les Oubliés de la Science" />
-                </div>
-                <div class="livre-extract-separator">
-                    <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 0s-.095 11.137 4.384 15.616C28.863 20.095 40 20 40 20s-11.137-.095-15.616 4.384C19.905 28.863 20 40 20 40s.095-11.137-4.384-15.616C11.137 19.905 0 20 0 20s11.137.095 15.616-4.384C20.095 11.137 20 0 20 0z" fill="#F5C97E"/></svg>
-                    <div class="livre-separator-line"></div>
+            <!-- Video Section -->
+            <section class="arte-video-section">
+                <h2 class="arte-video-title">Extrait du film documentaire "Aux armes citoyennes" d'ARTE</h2>
+                <div class="arte-video-container">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        src="https://www.youtube.com/embed/dYHLgwL8BD0" 
+                        title="Aux armes citoyennes - ARTE" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </section>
 
             <!-- Related Articles -->
-            <section class="livre-related">
-                <h2 class="livre-related-title">Autres articles reliés :</h2>
+            <section class="arte-related">
+                <h2 class="arte-related-title">Autres articles reliés :</h2>
                 
-                <a class="livre-related-card" href="oublies-science-article.html">
-                    <div class="livre-related-image">
-                        <img src="assets/img/les oubliés de la science cover.webp" alt="Les Oubliés de la Science : Le livre qui dénonce l'Effet Matilda" />
-                    </div>
-                    <div class="livre-related-content">
-                        <div class="livre-related-meta">
-                            <span class="livre-related-date">Publié Lundi à 9h23</span>
-                            <span class="livre-related-reading">Temps de lecture : 2 min</span>
+                <div class="arte-related-cards">
+                    <!-- Card 1: Cinéma & Histoire -->
+                    <article class="related-card">
+                        <div class="related-card-image">
+                            <img src="assets/img/hidden figure poster.webp" alt="Cinéma & Histoire : L'outil de réhabilitation des figures féminines oubliées" />
                         </div>
-                        <h3 class="livre-related-title-text">«Les Oubliés de la Science» : Le livre qui dénonce l'Effet Matilda</h3>
-                        <p class="livre-related-excerpt">Découvrez "Les Oubliés de la Science" : le livre qui dénonce l'Effet Matilda et l'invisibilisation systémique des femmes scientifiques.</p>
-                    </div>
-                </a>
+                        <div class="related-card-content">
+                            <div class="related-card-meta">
+                                <span class="related-card-date">Publié hier à 11h02</span>
+                                <span class="related-card-reading">Temps de lecture : 5 min</span>
+                            </div>
+                            <h3 class="related-card-title">Cinéma & Histoire : L'outil de réhabilitation des figures féminines oubliées</h3>
+                            <p class="related-card-excerpt">Les films sont des outils puissants pour corriger l'Histoire. Découvrez comment les films réhabilitent les figures féminines oubliées et luttent contre l'Effet Matilda.</p>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Liste de films -->
+                    <article class="related-card">
+                        <div class="related-card-content related-card-full">
+                            <div class="related-card-meta">
+                                <span class="related-card-date">Publié hier à 16h40</span>
+                            </div>
+                            <h3 class="related-card-title">Liste de films en relation avec les Matildas</h3>
+                            <p class="related-card-excerpt">Découvrez de nombreux films sur les Matildas à travers les ans !</p>
+                        </div>
+                    </article>
+                </div>
             </section>
         </main>
 
@@ -196,6 +210,6 @@
         </footer>
 
         <!-- Scripts -->
-        <script src="src/js/menu.js"></script>
+        <script src="../src/js/menu.js"></script>
     </body>
 </html>

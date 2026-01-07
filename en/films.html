@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="French">
+<html lang="en" data-theme="English">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Les Archives Oubliées — Liste De Films</title>
+        <title>The Forgotten Archives — Film List</title>
         <!-- Fonts: Merriweather for body -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="src/css/variables.css" />
-        <link rel="stylesheet" href="src/css/base.css" />
-        <link rel="stylesheet" href="src/css/styles.css" />
+        <link rel="stylesheet" href="../src/css/variables.css" />
+        <link rel="stylesheet" href="../src/css/base.css" />
+        <link rel="stylesheet" href="../src/css/styles.css" />
+        <link rel="alternate" href="/en/films.html" hreflang="en" />
+        <link rel="alternate" href="/fr/films.html" hreflang="fr" />
     </head>
     <body>
         <!-- Header -->
         <header class="header">
-            <img src="assets/logo/Header bg cropped.svg" alt="" class="header-bg" />
+            <img src="../assets/logo/Header bg cropped.svg" alt="" class="header-bg" />
             
             <div class="header-content">
                 <div class="header-logo">
                     <a href="index.html" class="header-logo-link">
-                        <img src="assets/logo/logo.svg" alt="Logo Les Archives Oubliées" class="header-logo-img" />
+                        <img src="../assets/logo/logo.svg" alt="Logo Les Archives Oubliées" class="header-logo-img" />
                     </a>
                 </div>
                 <nav class="header-nav">
-                    <img src="assets/logo/en_fr.svg" alt="EN / FR" class="header-lang-img" />
+                    <a href="../fr/films.html" class="header-lang-link"><img src="../assets/logo/en_fr.svg" alt="Passer en français" class="header-lang-img" /></a>
                     <button class="header-menu" aria-label="Menu">
-                        <img src="assets/logo/menu btn bg.svg" alt="" class="menu-bg" />
+                        <img src="../assets/logo/menu btn bg.svg" alt="" class="menu-bg" />
                         <div class="menu-bars">
                             <span class="menu-bar"></span>
                             <span class="menu-bar"></span>
@@ -42,7 +44,7 @@
         <!-- Menu Navigation -->
         <nav class="menu">
             <div class="menu-content">
-                <h2 class="menu-title">Les Archives Oubliées</h2>
+                <h2 class="menu-title">The Forgotten Archives</h2>
                 
                 <ul class="menu-list">
                     <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
@@ -50,20 +52,20 @@
                 
                 <h3 class="menu-subtitle">Articles</h3>
                 <ul class="menu-list">
-                    <li class="menu-item"><a href="alice-ball.html" class="menu-link">Alice ball</a></li>
-                    <li class="menu-item"><a href="heroines-oubliees.html" class="menu-link">Les Héroïnes oubliées</a></li>
-                    <li class="menu-item"><a href="methode-ball.html" class="menu-link">La «Méthode Ball»</a></li>
-                    <li class="menu-item"><a href="cinema-histoire.html" class="menu-link">Cinéma & Histoire</a></li>
-                    <li class="menu-item"><a href="oublies-science-article.html" class="menu-link">«Les Oubliés de la Science»</a></li>
+                    <li class="menu-item"><a href="alice-ball.html" class="menu-link">Alice Ball</a></li>
+                    <li class="menu-item"><a href="heroines-oubliees.html" class="menu-link">Forgotten Heroines</a></li>
+                    <li class="menu-item"><a href="methode-ball.html" class="menu-link">The "Ball Method"</a></li>
+                    <li class="menu-item"><a href="cinema-histoire.html" class="menu-link">Cinema & History</a></li>
+                    <li class="menu-item"><a href="oublies-science-article.html" class="menu-link">"The Forgotten of Science"</a></li>
                 </ul>
                 
-                <h3 class="menu-subtitle">Contenu supplémentaire</h3>
+                <h3 class="menu-subtitle">Additional Content</h3>
                 <ul class="menu-list">
-                    <li class="menu-item"><a href="chronologie.html" class="menu-link">Frise chronologique</a></li>
-                    <li class="menu-item"><a href="films.html" class="menu-link">Liste de films</a></li>
-                    <li class="menu-item"><a href="arte-aux-armes.html" class="menu-link">Film/documentaire ARTE</a></li>
-                    <li class="menu-item"><a href="livre-oublies-science.html" class="menu-link">Extrait du livre "les oubliés de la science"</a></li>
-                    <li class="menu-item"><a href="ressources-externes.html" class="menu-link">Ressources externes</a></li>
+                    <li class="menu-item"><a href="chronologie.html" class="menu-link">Timeline</a></li>
+                    <li class="menu-item"><a href="films.html" class="menu-link">Film List</a></li>
+                    <li class="menu-item"><a href="arte-aux-armes.html" class="menu-link">ARTE Film/Documentary</a></li>
+                    <li class="menu-item"><a href="livre-oublies-science.html" class="menu-link">Excerpt from the book "The Forgotten of Science"</a></li>
+                    <li class="menu-item"><a href="ressources-externes.html" class="menu-link">External Resources</a></li>
                 </ul>
                 
                 <!-- Footer -->
@@ -77,8 +79,8 @@
                     <div class="footer-content">
                         <div class="footer-column footer-column-left">
                             <ul class="footer-links">
-                                <li><a href="contact.html">Nous contacter</a></li>
-                                <li><a href="glossaire.html">Glossaire</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="glossaire.html">Glossary</a></li>
                             </ul>
                         </div>
 
@@ -90,15 +92,15 @@
 
                         <div class="footer-column footer-column-right">
                             <ul class="footer-links">
-                                <li><a href="projets.html">Autre projects</a></li>
-                                <li><a href="about.html">À propos</a></li>
+                                <li><a href="projets.html">Other Projects</a></li>
+                                <li><a href="about.html">About</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="footer-bottom">
-                        <p class="footer-credit">Projet de Merlin Henry A1</p>
-                        <p class="footer-legal">Mentions Légales : projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMI de Montbéliard</p>
+                        <p class="footer-credit">Project by Merlin Henry A1</p>
+                        <p class="footer-legal">Legal Notice: project completed in 2025 as part of a pedagogical exercise in the MMI department of Montbéliard</p>
                     </div>
                 </footer>
             </div>
@@ -108,7 +110,7 @@
             <!-- Films Section -->
             <section class="section-films" aria-labelledby="films-title">
                 <div class="films-header">
-                    <h1 id="films-title" class="films-title">Liste De Films</h1>
+                    <h1 id="films-title" class="films-title">Film List</h1>
                     <img src="assets/img/line with square.svg" alt="" class="article-arrow" />
                 </div>
 
@@ -121,7 +123,7 @@
                         <div class="film-content">
                             <h3 class="film-name">Hidden Figures</h3>
                             <p class="film-year">2016</p>
-                            <p class="film-description">Theodore Melfi nous raconte l'histoire vraie de trois femmes mathématiciennes afro-américaines qui ont contribué à la mission spatiale Apollo, malgré la discrimination.</p>
+                            <p class="film-description">Theodore Melfi tells the true story of three African American women mathematicians who contributed to the Apollo space mission, despite discrimination.</p>
                         </div>
                     </a>
 
@@ -133,7 +135,7 @@
                         <div class="film-content">
                             <h3 class="film-name">Radioactive</h3>
                             <p class="film-year">2019</p>
-                            <p class="film-description">Le biopic de Marie Curie, première femme à recevoir un prix Nobel. Un film sur la passion, l'ambition et les sacrifices d'une scientifique révolutionnaire.</p>
+                            <p class="film-description">The biopic of Marie Curie, the first woman to receive a Nobel Prize. A film about passion, ambition, and the sacrifices of a revolutionary scientist.</p>
                         </div>
                     </a>
 
@@ -145,7 +147,7 @@
                         <div class="film-content">
                             <h3 class="film-name">On the Basis of Sex</h3>
                             <p class="film-year">2018</p>
-                            <p class="film-description">L'histoire de Ruth Bader Ginsburg et de sa lutte pour l'égalité des droits. Un film inspirant sur la persévérance et la justice.</p>
+                            <p class="film-description">The story of Ruth Bader Ginsburg and her fight for equal rights. An inspiring film about perseverance and justice.</p>
                         </div>
                     </a>
 
@@ -156,8 +158,8 @@
                         </div>
                         <div class="film-content">
                             <h3 class="film-name">Aux armes, citoyennes</h3>
-                            <p class="film-year">Documentaire ARTE</p>
-                            <p class="film-description">Un documentaire retraçant les figures féminines majeures de la Révolution française et leur rôle fondamental dans l'histoire politique.</p>
+                            <p class="film-year">ARTE Documentary</p>
+                            <p class="film-description">A documentary tracing the major female figures of the French Revolution and their fundamental role in political history.</p>
                         </div>
                     </a>
 
@@ -169,7 +171,7 @@
                         <div class="film-content">
                             <h3 class="film-name">Marie Curie</h3>
                             <p class="film-year">2016</p>
-                            <p class="film-description">Une exploration visuelle du parcours de Marie Curie et de sa découverte révolutionnaire de la radioactivité.</p>
+                            <p class="film-description">A visual exploration of Marie Curie's journey and her revolutionary discovery of radioactivity.</p>
                         </div>
                     </a>
 
@@ -180,8 +182,8 @@
                         </div>
                         <div class="film-content">
                             <h3 class="film-name">Cherchez Natasha</h3>
-                            <p class="film-year">Film de fiction</p>
-                            <p class="film-description">Une comédie dramatique explorant les rôles des femmes dans les domaines scientifiques et académiques traditionnellement masculins.</p>
+                            <p class="film-year">Fiction Film</p>
+                            <p class="film-description">A dramatic comedy exploring the roles of women in traditionally male scientific and academic fields.</p>
                         </div>
                     </a>
 
@@ -205,8 +207,8 @@
             <div class="footer-content">
                 <div class="footer-column footer-column-left">
                     <ul class="footer-links">
-                        <li><a href="contact.html">Nous contacter</a></li>
-                        <li><a href="glossaire.html">Glossaire</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="glossaire.html">Glossary</a></li>
                     </ul>
                 </div>
 
@@ -218,20 +220,21 @@
 
                 <div class="footer-column footer-column-right">
                     <ul class="footer-links">
-                        <li><a href="projets.html">Autre projects</a></li>
-                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="projets.html">Other Projects</a></li>
+                        <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p class="footer-credit">Projet de Merlin Henry A1</p>
-                <p class="footer-legal">Mentions Légales : projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMI de Montbéliard</p>
+                <p class="footer-credit">Project by Merlin Henry A1</p>
+                <p class="footer-legal">Legal Notice: project completed in 2025 as part of a pedagogical exercise in the MMI department of Montbéliard</p>
             </div>
         </footer>
         
         <!-- Scripts -->
         <script src="src/js/menu.js"></script>
+        <script src="../src/js/menu.js"></script>
     </body>
   
 </html>

@@ -3,32 +3,34 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Les Archives Oubliées — À Propos</title>
+        <title>Les Archives Oubliées — Projets Étudiants</title>
         <!-- Fonts: Merriweather for body -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="src/css/variables.css" />
-        <link rel="stylesheet" href="src/css/base.css" />
-        <link rel="stylesheet" href="src/css/styles.css" />
+        <link rel="stylesheet" href="../src/css/variables.css" />
+        <link rel="stylesheet" href="../src/css/base.css" />
+        <link rel="stylesheet" href="../src/css/styles.css" />
+        <link rel="alternate" href="/fr/projets.html" hreflang="fr" />
+        <link rel="alternate" href="/en/projets.html" hreflang="en" />
     </head>
     <body>
         <!-- Header -->
         <header class="header">
-            <img src="assets/logo/Header bg cropped.svg" alt="" class="header-bg" />
+            <img src="../assets/logo/Header bg cropped.svg" alt="" class="header-bg" />
             
             <div class="header-content">
                 <div class="header-logo">
                     <a href="index.html" class="header-logo-link">
-                        <img src="assets/logo/logo.svg" alt="Logo Les Archives Oubliées" class="header-logo-img" />
+                        <img src="../assets/logo/logo.svg" alt="Logo Les Archives Oubliées" class="header-logo-img" />
                     </a>
                 </div>
                 <nav class="header-nav">
-                    <img src="assets/logo/en_fr.svg" alt="EN / FR" class="header-lang-img" />
+                    <a href="../en/projets.html" class="header-lang-link"><img src="../assets/logo/en_fr.svg" alt="Switch to English" class="header-lang-img" /></a>
                     <button class="header-menu" aria-label="Menu">
-                        <img src="assets/logo/menu btn bg.svg" alt="" class="menu-bg" />
+                        <img src="../assets/logo/menu btn bg.svg" alt="" class="menu-bg" />
                         <div class="menu-bars">
                             <span class="menu-bar"></span>
                             <span class="menu-bar"></span>
@@ -105,59 +107,131 @@
         </nav>
 
         <main class="container" id="contenu">
-            <!-- À Propos Section -->
-            <section class="section-about" aria-labelledby="about-title">
-                <div class="about-header">
-                    <h1 id="about-title" class="about-title">À Propos</h1>
-                    <img src="assets/img/line with square.svg" alt="" class="article-arrow" />
-                </div>
+            <!-- Projets Section -->
+            <section class="section-projets" aria-labelledby="projets-title">
+                <h1 id="projets-title" class="projets-title">Projets Étudiants</h1>
+                
+                <div class="projets-grid">
+                    <!-- Génia -->
+                    <a href="#" class="projet-card">
+                        <div class="projet-media">
+                            <img src="assets/img/genesia.webp" alt="Génia" />
+                        </div>
+                        <div class="projet-content">
+                            <h3 class="projet-name">Génia</h3>
+                            <p class="projet-student">Projet de Léonie Pruniaux</p>
+                        </div>
+                    </a>
 
-                <div class="about-content">
-                    <!-- Welcome Section -->
-                    <div class="about-section">
-                        <p class="about-text">Bienvenue sur ce site ! Je m'appelle Merlin Henry, et ce projet est le fruit de mes premières études en tant qu'étudiant en première année de BUT Métiers du Multimédia et de l'Internet.</p>
-                    </div>
+                    <!-- Apollo 11 qui dit mieux -->
+                    <a href="#" class="projet-card">
+                        <div class="projet-media">
+                            <img src="assets/img/appolo 11.webp" alt="Apollo 11 qui dit mieux" />
+                        </div>
+                        <div class="projet-content">
+                            <h3 class="projet-name">Apollo 11 qui dit mieux</h3>
+                            <p class="projet-student">Projet de Noemie Caritey</p>
+                        </div>
+                    </a>
 
-                    <!-- Double Objectif -->
-                    <div class="about-section">
-                        <h2 class="about-subtitle">Ce projet individuel à un double objectif, qui est à la fois personnel et académique :</h2>
-                        
-                        <ul class="about-objectives">
-                            <li class="about-objective">
-                                <strong>Réparer une injustice historique (L'Effet Matilda) :</strong> je suis convaincu qu'il est essentiel de donner la visibilité aux femmes de science dont les contributions ont été historiquement minimisées ou effacées. Mon but est de mettre en lumière leurs travaux pour rétablir une histoire des sciences plus équitable.
-                            </li>
-                            <li class="about-objective">
-                                <strong>Être une ressource :</strong> mon souhait et de donner accès aux sources tangibles et aux informations biographiques. Je conçois ce site comme un outil que les enseignants et les étudiants pourront utiliser, en garantissant la plus grande rigueur dans les faits présentés.
-                            </li>
-                        </ul>
-                    </div>
+                    <!-- Alice Ball (Noa) -->
+                    <a href="#" class="projet-card">
+                        <div class="projet-media">
+                            <img src="assets/img/alice ball noa.webp" alt="Alice Ball" />
+                        </div>
+                        <div class="projet-content">
+                            <h3 class="projet-name">Alice Ball</h3>
+                            <p class="projet-student">Projet de Noa Grevillot</p>
+                        </div>
+                    </a>
 
-                    <!-- Competences -->
-                    <div class="about-section">
-                        <h2 class="about-subtitle">Mettre les Compétences en Pratique</h2>
-                        
-                        <p class="about-text">Ce site est également une démonstration concrète des compétences acquises au cours de mes cinq premiers mois en MMI :</p>
-                        
-                        <ul class="about-skills">
-                            <li class="about-skill">
-                                <strong>Conception Web « Mobile First » :</strong> cela signifie que j'ai optimisé l'expérience utilisateur pour les appareils mobiles en priorité, assurant une consultation rapide et agréable.
-                            </li>
-                            <li class="about-skill">
-                                <strong>Construction de site web :</strong> ce projet est l'occasion de montrer ma capacité à construire un premier site web, en gérant l'intégration, la structure et le respect des standards.
-                            </li>
-                        </ul>
-                    </div>
+                    <!-- Au delà du nobel -->
+                    <a href="#" class="projet-card">
+                        <div class="projet-media">
+                            <img src="assets/img/au dela du nobel.webp" alt="Au delà du nobel" />
+                        </div>
+                        <div class="projet-content">
+                            <h3 class="projet-name">Au delà du nobel</h3>
+                            <p class="projet-student">Projet de Evan Gichtenaere</p>
+                        </div>
+                    </a>
 
-                    <!-- Exploration -->
-                    <div class="about-section">
-                        <p class="about-text">En explorant ces pages, vous ne découvrez pas seulement les figures scientifiques que j'ai choisi de mettre en avant, mais aussi le résultat de mes premiers apprentissages en MMI.</p>
-                    </div>
+                    <!-- L'effet matilda -->
+                    <a href="#" class="projet-card">
+                        <div class="projet-media">
+                            <img src="assets/img/l'effet matilda clement.webp" alt="L'effet matilda" />
+                        </div>
+                        <div class="projet-content">
+                            <h3 class="projet-name">L'effet matilda</h3>
+                            <p class="projet-student">Projet de Clément Bertrand</p>
+                        </div>
+                    </a>
 
-                    <!-- Merci -->
-                    <div class="about-section">
-                        <h2 class="about-subtitle">Merci de votre visite !</h2>
-                        <p class="about-credits">Tous les crédits d'images vont à Wikipedia</p>
-                    </div>
+                    <!-- Sous le microscope -->
+                    <a href="#" class="projet-card">
+                        <div class="projet-media">
+                            <img src="assets/img/sous le microscope.webp" alt="Sous le microscope" />
+                        </div>
+                        <div class="projet-content">
+                            <h3 class="projet-name">Sous le microscope</h3>
+                            <p class="projet-student">Projet de Mahey Balambo</p>
+                        </div>
+                    </a>
+
+                    <!-- Mary Anning -->
+                    <a href="#" class="projet-card">
+                        <div class="projet-media">
+                            <img src="assets/img/mary anning.webp" alt="Mary Anning" />
+                        </div>
+                        <div class="projet-content">
+                            <h3 class="projet-name">Mary Anning</h3>
+                            <p class="projet-student">Projet de Jeremy Vicaire</p>
+                        </div>
+                    </a>
+
+                    <!-- Tu Youyou -->
+                    <a href="#" class="projet-card">
+                        <div class="projet-media">
+                            <img src="assets/img/tu youyou.webp" alt="Tu Youyou" />
+                        </div>
+                        <div class="projet-content">
+                            <h3 class="projet-name">Tu Youyou</h3>
+                            <p class="projet-student">Projet de Jehat Bakiray</p>
+                        </div>
+                    </a>
+
+                    <!-- Women of logics -->
+                    <a href="#" class="projet-card">
+                        <div class="projet-media">
+                            <img src="assets/img/women of logics.webp" alt="Women of logics" />
+                        </div>
+                        <div class="projet-content">
+                            <h3 class="projet-name">Women of logics</h3>
+                            <p class="projet-student">Projet de Emma Badarous</p>
+                        </div>
+                    </a>
+
+                    <!-- Nicole-Reine Lepaute -->
+                    <a href="#" class="projet-card">
+                        <div class="projet-media">
+                            <img src="assets/img/nicole reine lepaute.webp" alt="Nicole-Reine Lepaute" />
+                        </div>
+                        <div class="projet-content">
+                            <h3 class="projet-name">Nicole-Reine Lepaute</h3>
+                            <p class="projet-student">Projet de Nargis Ayyobi</p>
+                        </div>
+                    </a>
+
+                    <!-- Alice Ball (Rahma) -->
+                    <a href="#" class="projet-card">
+                        <div class="projet-media">
+                            <img src="assets/img/alice ball rahma.webp" alt="Alice Ball" />
+                        </div>
+                        <div class="projet-content">
+                            <h3 class="projet-name">Alice Ball</h3>
+                            <p class="projet-student">Projet de Rahma Hamid</p>
+                        </div>
+                    </a>
                 </div>
             </section>
         </main>
@@ -200,6 +274,7 @@
         
         <!-- Scripts -->
         <script src="src/js/menu.js"></script>
+        <script src="../src/js/menu.js"></script>
     </body>
   
 </html>
